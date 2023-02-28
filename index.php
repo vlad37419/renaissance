@@ -6,8 +6,22 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Наркологическая клиника «Ренессанс»</title>
+    <link rel="stylesheet" href="/assets/css/build/fancybox.css">
+    <link rel="stylesheet" href="/assets/css/build/swiper.css">
+    <link rel="stylesheet" href="/assets/css/normalize.css">
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="/assets/css/headers/header.css">
+    <link rel="stylesheet" href="/assets/css/sections/promo.css">
+    <link rel="stylesheet" href="/assets/css/sections/advantages.css">
+    <link rel="stylesheet" href="/assets/css/sections/services.css">
+    <link rel="stylesheet" href="/assets/css/sections/advantages-section.css">
+    <link rel="stylesheet" href="/assets/css/sections/about.css">
+    <link rel="stylesheet" href="/assets/css/sections/consultation.css">
+    <link rel="stylesheet" href="/assets/css/sections/documents.css">
+    <link rel="stylesheet" href="/assets/css/sections/specialists.css">
+    <script defer src="/assets/js/build/fancybox.js"></script>
+    <script defer src="/assets/js/build/swiper.js"></script>
+    <script defer src="/assets/js/main.js"></script>
 </head>
 <body>
 <div class="top-bar">
@@ -52,7 +66,7 @@
         <div class="header__top-container container">
             <a href="/" class="header__logo logo">
                 <picture class="logo__picture">
-                    <img src="/assets/img/logo.svg" alt="" class="logo__img">
+                    <img src="/assets/img/logo.svg" alt="Логотип клиники Ренессанс" class="logo__img">
                 </picture>
             </a>
             <ul class="header__info">
@@ -118,7 +132,7 @@
                     </span>
                 </a>
             </div>
-            <button class="header__btn btn btn_transparent">
+            <button class="header__btn btn">
                 Обратный звонок
             </button>
         </div>
@@ -128,7 +142,7 @@
             <nav class="header__menu menu">
                 <ul class="menu__list">
                     <li class="menu__item">
-                        <a href="#" class="menu__link">
+                        <button class="menu__link">
                             <span class="menu__link-text">
                                 О клинике
                             </span>
@@ -137,7 +151,7 @@
                                 <path d="M10.9993 13.9064C10.8971 13.9064 10.8015 13.8883 10.7125 13.8521C10.6235 13.8159 10.537 13.7561 10.4529 13.6728L5.91543 9.13527C5.77495 8.99388 5.70853 8.80841 5.71617 8.57888C5.72381 8.34933 5.79787 8.1634 5.93834 8.02109C6.10939 7.84822 6.29555 7.77324 6.49682 7.79616C6.69809 7.81908 6.87661 7.90077 7.03239 8.04125L10.9999 12.0088L14.9675 8.04125C15.1098 7.90077 15.2965 7.8229 15.5274 7.80762C15.7583 7.79234 15.944 7.87101 16.0845 8.04361C16.2555 8.18567 16.3296 8.368 16.3066 8.59061C16.2837 8.81324 16.202 9.00243 16.0616 9.15819L11.547 13.6728C11.4627 13.7561 11.3759 13.8159 11.2866 13.8521C11.1973 13.8883 11.1016 13.9064 10.9993 13.9064Z"
                                       fill="white"/>
                             </svg>
-                        </a>
+                        </button>
                         <ul class="menu__sub-list">
                             <li class="menu__sub-item">
                                 <a href="#" class="menu__sub-link menu__sub-link_pr-30">
@@ -172,7 +186,7 @@
                         </ul>
                     </li>
                     <li class="menu__item">
-                        <a href="#" class="menu__link">
+                        <button class="menu__link">
                             <span class="menu__link-text">
                                 Наши услуги
                             </span>
@@ -181,7 +195,7 @@
                                 <path d="M10.9993 13.9064C10.8971 13.9064 10.8015 13.8883 10.7125 13.8521C10.6235 13.8159 10.537 13.7561 10.4529 13.6728L5.91543 9.13527C5.77495 8.99388 5.70853 8.80841 5.71617 8.57888C5.72381 8.34933 5.79787 8.1634 5.93834 8.02109C6.10939 7.84822 6.29555 7.77324 6.49682 7.79616C6.69809 7.81908 6.87661 7.90077 7.03239 8.04125L10.9999 12.0088L14.9675 8.04125C15.1098 7.90077 15.2965 7.8229 15.5274 7.80762C15.7583 7.79234 15.944 7.87101 16.0845 8.04361C16.2555 8.18567 16.3296 8.368 16.3066 8.59061C16.2837 8.81324 16.202 9.00243 16.0616 9.15819L11.547 13.6728C11.4627 13.7561 11.3759 13.8159 11.2866 13.8521C11.1973 13.8883 11.1016 13.9064 10.9993 13.9064Z"
                                       fill="white"/>
                             </svg>
-                        </a>
+                        </button>
                         <ul class="menu__sub-list">
                             <li class="menu__sub-item">
                                 <a href="#" class="menu__sub-link">
@@ -194,14 +208,14 @@
                                 </a>
                             </li>
                             <li class="menu__sub-item">
-                                <a href="#" class="menu__sub-link">
+                                <button class="menu__sub-link">
                                     Лечение алкоголизма
                                     <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                          xmlns="http://www.w3.org/2000/svg">
                                         <path d="M14.0703 10.8631C14.0703 10.9653 14.0523 11.0609 14.0161 11.1499C13.9799 11.2389 13.9201 11.3254 13.8367 11.4095L9.29919 15.947C9.15779 16.0874 8.97233 16.1539 8.7428 16.1462C8.51325 16.1386 8.32732 16.0645 8.185 15.9241C8.01214 15.753 7.93716 15.5668 7.96008 15.3656C7.98299 15.1643 8.06469 14.9858 8.20517 14.83L12.1728 10.8624L8.20517 6.89489C8.06469 6.75256 7.98681 6.56594 7.97154 6.33503C7.95626 6.10412 8.03492 5.91842 8.20753 5.77793C8.34958 5.60689 8.53192 5.53283 8.75453 5.55575C8.97716 5.57867 9.16635 5.66037 9.32211 5.80085L13.8367 10.3154C13.9201 10.3997 13.9799 10.4865 14.0161 10.5758C14.0523 10.6651 14.0703 10.7608 14.0703 10.8631Z"
                                               fill="white"/>
                                     </svg>
-                                </a>
+                                </button>
                                 <ul class="menu__sub-list">
                                     <li class="menu__sub-item">
                                         <a href="#" class="menu__sub-link menu__sub-link_pr-30">
@@ -241,14 +255,14 @@
                                 </ul>
                             </li>
                             <li class="menu__sub-item">
-                                <a href="#" class="menu__sub-link">
+                                <button class="menu__sub-link">
                                     Лечение наркомании
                                     <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                          xmlns="http://www.w3.org/2000/svg">
                                         <path d="M14.0703 10.8631C14.0703 10.9653 14.0523 11.0609 14.0161 11.1499C13.9799 11.2389 13.9201 11.3254 13.8367 11.4095L9.29919 15.947C9.15779 16.0874 8.97233 16.1539 8.7428 16.1462C8.51325 16.1386 8.32732 16.0645 8.185 15.9241C8.01214 15.753 7.93716 15.5668 7.96008 15.3656C7.98299 15.1643 8.06469 14.9858 8.20517 14.83L12.1728 10.8624L8.20517 6.89489C8.06469 6.75256 7.98681 6.56594 7.97154 6.33503C7.95626 6.10412 8.03492 5.91842 8.20753 5.77793C8.34958 5.60689 8.53192 5.53283 8.75453 5.55575C8.97716 5.57867 9.16635 5.66037 9.32211 5.80085L13.8367 10.3154C13.9201 10.3997 13.9799 10.4865 14.0161 10.5758C14.0523 10.6651 14.0703 10.7608 14.0703 10.8631Z"
                                               fill="white"/>
                                     </svg>
-                                </a>
+                                </button>
                                 <ul class="menu__sub-list">
                                     <li class="menu__sub-item">
                                         <a href="#" class="menu__sub-link menu__sub-link_pr-30">
@@ -288,14 +302,14 @@
                                 </ul>
                             </li>
                             <li class="menu__sub-item">
-                                <a href="#" class="menu__sub-link">
+                                <button class="menu__sub-link">
                                     Реабилитация зависимых
                                     <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                          xmlns="http://www.w3.org/2000/svg">
                                         <path d="M14.0703 10.8631C14.0703 10.9653 14.0523 11.0609 14.0161 11.1499C13.9799 11.2389 13.9201 11.3254 13.8367 11.4095L9.29919 15.947C9.15779 16.0874 8.97233 16.1539 8.7428 16.1462C8.51325 16.1386 8.32732 16.0645 8.185 15.9241C8.01214 15.753 7.93716 15.5668 7.96008 15.3656C7.98299 15.1643 8.06469 14.9858 8.20517 14.83L12.1728 10.8624L8.20517 6.89489C8.06469 6.75256 7.98681 6.56594 7.97154 6.33503C7.95626 6.10412 8.03492 5.91842 8.20753 5.77793C8.34958 5.60689 8.53192 5.53283 8.75453 5.55575C8.97716 5.57867 9.16635 5.66037 9.32211 5.80085L13.8367 10.3154C13.9201 10.3997 13.9799 10.4865 14.0161 10.5758C14.0523 10.6651 14.0703 10.7608 14.0703 10.8631Z"
                                               fill="white"/>
                                     </svg>
-                                </a>
+                                </button>
                                 <ul class="menu__sub-list">
                                     <li class="menu__sub-item">
                                         <a href="#" class="menu__sub-link menu__sub-link_pr-30">
@@ -335,14 +349,14 @@
                                 </ul>
                             </li>
                             <li class="menu__sub-item">
-                                <a href="#" class="menu__sub-link">
+                                <button class="menu__sub-link">
                                     Психиатрия зависимостей
                                     <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                          xmlns="http://www.w3.org/2000/svg">
                                         <path d="M14.0703 10.8631C14.0703 10.9653 14.0523 11.0609 14.0161 11.1499C13.9799 11.2389 13.9201 11.3254 13.8367 11.4095L9.29919 15.947C9.15779 16.0874 8.97233 16.1539 8.7428 16.1462C8.51325 16.1386 8.32732 16.0645 8.185 15.9241C8.01214 15.753 7.93716 15.5668 7.96008 15.3656C7.98299 15.1643 8.06469 14.9858 8.20517 14.83L12.1728 10.8624L8.20517 6.89489C8.06469 6.75256 7.98681 6.56594 7.97154 6.33503C7.95626 6.10412 8.03492 5.91842 8.20753 5.77793C8.34958 5.60689 8.53192 5.53283 8.75453 5.55575C8.97716 5.57867 9.16635 5.66037 9.32211 5.80085L13.8367 10.3154C13.9201 10.3997 13.9799 10.4865 14.0161 10.5758C14.0523 10.6651 14.0703 10.7608 14.0703 10.8631Z"
                                               fill="white"/>
                                     </svg>
-                                </a>
+                                </button>
                                 <ul class="menu__sub-list">
                                     <li class="menu__sub-item">
                                         <a href="#" class="menu__sub-link menu__sub-link_pr-30">
@@ -382,14 +396,14 @@
                                 </ul>
                             </li>
                             <li class="menu__sub-item">
-                                <a href="#" class="menu__sub-link">
+                                <button class="menu__sub-link">
                                     Медицинские перевозки
                                     <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                          xmlns="http://www.w3.org/2000/svg">
                                         <path d="M14.0703 10.8631C14.0703 10.9653 14.0523 11.0609 14.0161 11.1499C13.9799 11.2389 13.9201 11.3254 13.8367 11.4095L9.29919 15.947C9.15779 16.0874 8.97233 16.1539 8.7428 16.1462C8.51325 16.1386 8.32732 16.0645 8.185 15.9241C8.01214 15.753 7.93716 15.5668 7.96008 15.3656C7.98299 15.1643 8.06469 14.9858 8.20517 14.83L12.1728 10.8624L8.20517 6.89489C8.06469 6.75256 7.98681 6.56594 7.97154 6.33503C7.95626 6.10412 8.03492 5.91842 8.20753 5.77793C8.34958 5.60689 8.53192 5.53283 8.75453 5.55575C8.97716 5.57867 9.16635 5.66037 9.32211 5.80085L13.8367 10.3154C13.9201 10.3997 13.9799 10.4865 14.0161 10.5758C14.0523 10.6651 14.0703 10.7608 14.0703 10.8631Z"
                                               fill="white"/>
                                     </svg>
-                                </a>
+                                </button>
                                 <ul class="menu__sub-list">
                                     <li class="menu__sub-item">
                                         <a href="#" class="menu__sub-link menu__sub-link_pr-30">
@@ -473,7 +487,540 @@
 <main class="main">
     <section class="promo">
         <div class="promo__container container">
-
+            <div class="promo__img-wrapper">
+                <picture class="promo__picture">
+                    <img src="/assets/img/sections/promo/doctor.png" alt="Шилов Глеб Леонидович — главврач клиники"
+                         class="promo__img">
+                </picture>
+                <a href="#" class="promo__badge">
+                    <p class="promo__badge-text">
+                        Шилов Глеб Леонидович — главврач клиники
+                    </p>
+                    <img src="/assets/img/sections/promo/badge-icon.svg" alt="" aria-label="presentation"
+                         class="promo__badge-icon">
+                    <img src="/assets/img/sections/promo/badge-arrow.svg" alt="" aria-label="presentation"
+                         class="promo__badge-icon">
+                </a>
+            </div>
+            <div class="promo__content">
+                <h1 class="promo__title page-title">
+                    Наркологическая клиника «Ренессанс»
+                </h1>
+                <p class="promo__descr">
+                    Эффективное избавление от всех видов зависимости
+                </p>
+                <p class="promo__sub-descr section-descr">
+                    Анонимное лечение алкогольной, наркотической и других видов зависимости. Круглосуточный выезд
+                    нарколога на дом для вывода из запоя, снятия симптомов похмелья или ломки.
+                </p>
+                <div class="promo__btns">
+                    <button class="promo__btn btn-main">
+                        Записаться на приём
+                    </button>
+                    <button class="promo__btn btn-main btn-main_color">
+                        Вызвать врача на дом
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="advantages section-offset">
+        <div class="advantages__container container">
+            <ul class="advantages__list">
+                <li class="advantages__item advantage">
+                    <img src="/assets/img/sections/advantages/anonymity.svg" alt="картика анонмности"
+                         class="advantage__icon">
+                    <p class="advantage__text">
+                        100% анонимное лечение
+                    </p>
+                </li>
+                <li class="advantages__item advantage">
+                    <img src="/assets/img/sections/advantages/around.svg" alt="картика работаем круглосуточно"
+                         class="advantage__icon">
+                    <p class="advantage__text">
+                        Работаем круглосуточно 24/7
+                    </p>
+                </li>
+                <li class="advantages__item advantage">
+                    <img src="/assets/img/sections/advantages/flexibility.svg" alt="картика гибкость лечения"
+                         class="advantage__icon">
+                    <p class="advantage__text">
+                        Помощь на дому и в стационаре
+                    </p>
+                </li>
+                <li class="advantages__item advantage">
+                    <img src="/assets/img/sections/advantages/speed.svg" alt="картика скорость приезда"
+                         class="advantage__icon">
+                    <p class="advantage__text">
+                        Быстрый приезд нарколога на дом
+                    </p>
+                </li>
+                <li class="advantages__item advantage">
+                    <img src="/assets/img/sections/advantages/guarantee.svg" alt="картика гарантии"
+                         class="advantage__icon">
+                    <p class="advantage__text">
+                        Реабилитация с гарантией от срыва
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="services">
+        <div class="services__container container">
+            <h2 class="services__title section-title">
+                Направления лечения
+            </h2>
+            <p class="services__descr section-descr section-descr_center">
+                Комплексный набор нащих услуг для эффективного, быстрого и безопасного лечения зависимостей
+            </p>
+            <div class="section-decor">
+                <span class="section-decor-item"></span>
+                <span class="section-decor-item"></span>
+                <span class="section-decor-item"></span>
+                <span class="section-decor-item"></span>
+                <span class="section-decor-item"></span>
+                <span class="section-decor-item"></span>
+            </div>
+            <div class="services__cards">
+                <div class="services__card card-service">
+                    <a href="#" class="card-service__wrapper">
+                        <picture class="card-service__picture">
+                            <img src="/assets/img/sections/services/card-1.png" alt="Вызов нарколога на дом"
+                                 class="card-service__img">
+                        </picture>
+                        <div class="card-service__content">
+                            <p class="card-service__text">
+                                Вызов нарколога на дом
+                            </p>
+                            <img src="/assets/img/sections/services/card-arrow.svg" alt="" aria-label="presentation"
+                                 class="card-service__arrow">
+                        </div>
+                    </a>
+                </div>
+                <div class="services__card card-service">
+                    <a href="#" class="card-service__wrapper">
+                        <picture class="card-service__picture">
+                            <img src="/assets/img/sections/services/card-2.png" alt="Вывод из запоя"
+                                 class="card-service__img">
+                        </picture>
+                        <div class="card-service__content">
+                            <p class="card-service__text">
+                                Вывод из запоя
+                            </p>
+                            <img src="/assets/img/sections/services/card-arrow.svg" alt="" aria-label="presentation"
+                                 class="card-service__arrow">
+                        </div>
+                    </a>
+                </div>
+                <div class="services__card card-service">
+                    <a href="#" class="card-service__wrapper">
+                        <picture class="card-service__picture">
+                            <img src="/assets/img/sections/services/card-3.png" alt="Капельница от похмелья"
+                                 class="card-service__img">
+                        </picture>
+                        <div class="card-service__content">
+                            <p class="card-service__text">
+                                Капельница от похмелья
+                            </p>
+                            <img src="/assets/img/sections/services/card-arrow.svg" alt="" aria-label="presentation"
+                                 class="card-service__arrow">
+                        </div>
+                    </a>
+                </div>
+                <div class="services__card card-service">
+                    <a href="#" class="card-service__wrapper">
+                        <picture class="card-service__picture">
+                            <img src="/assets/img/sections/services/card-4.png" alt="Кодирование от алкоголизма"
+                                 class="card-service__img">
+                        </picture>
+                        <div class="card-service__content">
+                            <p class="card-service__text">
+                                Кодирование от алкоголизма
+                            </p>
+                            <img src="/assets/img/sections/services/card-arrow.svg" alt="" aria-label="presentation"
+                                 class="card-service__arrow">
+                        </div>
+                    </a>
+                </div>
+                <div class="services__card card-service">
+                    <a href="#" class="card-service__wrapper">
+                        <picture class="card-service__picture">
+                            <img src="/assets/img/sections/services/card-5.png" alt="Лечение алкоголизма"
+                                 class="card-service__img">
+                        </picture>
+                        <div class="card-service__content">
+                            <p class="card-service__text">
+                                Лечение алкоголизма
+                            </p>
+                            <img src="/assets/img/sections/services/card-arrow.svg" alt="" aria-label="presentation"
+                                 class="card-service__arrow">
+                        </div>
+                    </a>
+                </div>
+                <div class="services__card card-service">
+                    <a href="#" class="card-service__wrapper">
+                        <picture class="card-service__picture">
+                            <img src="/assets/img/sections/services/card-6.png" alt="Лечение наркомании"
+                                 class="card-service__img">
+                        </picture>
+                        <div class="card-service__content">
+                            <p class="card-service__text">
+                                Лечение наркомании
+                            </p>
+                            <img src="/assets/img/sections/services/card-arrow.svg" alt="" aria-label="presentation"
+                                 class="card-service__arrow">
+                        </div>
+                    </a>
+                </div>
+                <div class="services__card card-service">
+                    <a href="#" class="card-service__wrapper">
+                        <picture class="card-service__picture">
+                            <img src="/assets/img/sections/services/card-7.png" alt="Психотерапия зависимостей"
+                                 class="card-service__img">
+                        </picture>
+                        <div class="card-service__content">
+                            <p class="card-service__text">
+                                Психотерапия зависимостей
+                            </p>
+                            <img src="/assets/img/sections/services/card-arrow.svg" alt="" aria-label="presentation"
+                                 class="card-service__arrow">
+                        </div>
+                    </a>
+                </div>
+                <div class="services__card card-service">
+                    <a href="#" class="card-service__wrapper">
+                        <picture class="card-service__picture">
+                            <img src="/assets/img/sections/services/card-8.png" alt="Реабилитация зависимых"
+                                 class="card-service__img">
+                        </picture>
+                        <div class="card-service__content">
+                            <p class="card-service__text">
+                                Реабилитация зависимых
+                            </p>
+                            <img src="/assets/img/sections/services/card-arrow.svg" alt="" aria-label="presentation"
+                                 class="card-service__arrow">
+                        </div>
+                    </a>
+                </div>
+                <div class="services__card card-service">
+                    <a href="#" class="card-service__wrapper">
+                        <picture class="card-service__picture">
+                            <img src="/assets/img/sections/services/card-9.png" alt="Перевозка лежачих больных"
+                                 class="card-service__img">
+                        </picture>
+                        <div class="card-service__content">
+                            <p class="card-service__text">
+                                Перевозка лежачих больных
+                            </p>
+                            <img src="/assets/img/sections/services/card-arrow.svg" alt="" aria-label="presentation"
+                                 class="card-service__arrow">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="advantages-section section-offset">
+        <div class="advantages-section__container container">
+            <h2 class="advantages-section__title section-title section-title_color">
+                Почему мы стоим вашего доверия
+            </h2>
+            <ul class="advantages-section__list">
+                <li class="advantages-section__item">
+                    <div class="advantages-section__item-wrapper">
+                        <img src="/assets/img/sections/advantages-section/license.svg"
+                             alt="Государственная медицинская лицензия" class="advantages-section__item-img">
+                        <p class="advantages-section__item-text">
+                            Государственная медицинская лицензия
+                        </p>
+                    </div>
+                </li>
+                <li class="advantages-section__item">
+                    <div class="advantages-section__item-wrapper">
+                        <img src="/assets/img/sections/advantages-section/around.svg"
+                             alt="Круглосуточная наркологическая помощь" class="advantages-section__item-img">
+                        <p class="advantages-section__item-text">
+                            Круглосуточная наркологическая помощь
+                        </p>
+                    </div>
+                </li>
+                <li class="advantages-section__item">
+                    <div class="advantages-section__item-wrapper">
+                        <img src="/assets/img/sections/advantages-section/qualification.svg"
+                             alt="Специалисты высшей квалификации" class="advantages-section__item-img">
+                        <p class="advantages-section__item-text">
+                            Специалисты высшей квалификации
+                        </p>
+                    </div>
+                </li>
+                <li class="advantages-section__item">
+                    <div class="advantages-section__item-wrapper">
+                        <img src="/assets/img/sections/advantages-section/equipment.svg"
+                             alt="Государственная медицинская лицензия" class="advantages-section__item-img">
+                        <p class="advantages-section__item-text">
+                            Современное медоборудование
+                        </p>
+                    </div>
+                </li>
+                <li class="advantages-section__item">
+                    <div class="advantages-section__item-wrapper">
+                        <img src="/assets/img/sections/advantages-section/anonymity.svg"
+                             alt="100% гарантия анонимного лечения" class="advantages-section__item-img">
+                        <p class="advantages-section__item-text">
+                            100% гарантия анонимного лечения
+                        </p>
+                    </div>
+                </li>
+                <li class="advantages-section__item">
+                    <div class="advantages-section__item-wrapper">
+                        <img src="/assets/img/sections/advantages-section/individuality.svg"
+                             alt="Индивидуальный протокол лечения" class="advantages-section__item-img">
+                        <p class="advantages-section__item-text">
+                            Индивидуальный протокол лечения
+                        </p>
+                    </div>
+                </li>
+                <li class="advantages-section__item">
+                    <div class="advantages-section__item-wrapper">
+                        <img src="/assets/img/sections/advantages-section/quality.svg" alt="Контроль качества услуг"
+                             class="advantages-section__item-img">
+                        <p class="advantages-section__item-text">
+                            Контроль качества услуг
+                        </p>
+                    </div>
+                </li>
+                <li class="advantages-section__item">
+                    <div class="advantages-section__item-wrapper">
+                        <img src="/assets/img/sections/advantages-section/discounts.svg"
+                             alt="Акции, скидки и гибкие цены" class="advantages-section__item-img">
+                        <p class="advantages-section__item-text">
+                            Акции, скидки и гибкие цены
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="about section-offset">
+        <div class="about__container container">
+            <h2 class="about__title section-title">
+                О наркологической клинике «Ренессанс»
+            </h2>
+            <div class="about__wrapper">
+                <div class="about__content">
+                    <p class="about__descr section-descr">
+                        Идейные соображения высшего порядка, а также укрепление и развитие структуры требуют от нас
+                        анализа новых предложений. Равным образом новая модель организационной деятельности способствует
+                        подготовки и реализации дальнейших направлений развития.
+                    </p>
+                    <p class="about__descr section-descr">
+                        Товарищи! реализация намеченных плановых заданий играет важную роль в формировании направлений
+                        прогрессивного развития. Разнообразный и богатый опыт консультация с широким активом
+                        обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и
+                        административных условий. Значимость этих проблем настолько очевидна, что постоянное
+                        информационно-пропагандистское обеспечение нашей деятельности представляет собой интересный
+                        эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач.
+                        Разнообразный и богатый опыт реализация намеченных плановых заданий влечет за собой процесс
+                        внедрения и модернизации новых предложений.
+                    </p>
+                </div>
+                <picture class="about__picture">
+                    <img src="/assets/img/sections/about/clinic.png" alt="Наркологическая клиника «Ренессанс»"
+                         class="about__img">
+                </picture>
+            </div>
+        </div>
+    </section>
+    <section class="consultation section-offset">
+        <div class="consultation__container container">
+            <div class="consultation__wrapper">
+                <picture class="consultation__picture">
+                    <img src="/assets/img/sections/consultation/doctor.png" alt="Врач с компьютером" class="consultation__img">
+                </picture>
+                <div class="consultation__content">
+                    <h2 class="consultation__title section-title section-title_color">
+                        Запишитесь на бесплатную консультацию по телефону
+                    </h2>
+                    <p class="consultation__descr">
+                        Специалист по телефону соберёт первичный анамнез, отправит ближайшую мобильную бригаду врачей,
+                        сообщит о стоимости процедуры и времени прибытия нарколога.
+                    </p>
+                    <form action="" method="post" class="consultation__form">
+                        <div class="consultation__form-wrapper">
+                            <label class="consultation__form-label">
+                                <input placeholder="Ваше имя" type="text" name="name" class="consultation__form-input name">
+                            </label>
+                            <label class="consultation__form-label">
+                                <input placeholder="Телефон" type="tel" name="phone" class="consultation__form-input phone">
+                            </label>
+                        </div>
+                        <button type="submit" class="consultation__form-submit">
+                            Отправить заявку
+                        </button>
+                        <p class="consultation__form-text">
+                            Нажимая на кнопку «Отправить заявку» вы соглашаетесь с обработкой персональных данных
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="documents section-offset">
+        <div class="documents__container container">
+            <h2 class="documents__title section-title">
+                Лицензии и сертификаты
+            </h2>
+            <p class="documents__descr section-descr section-descr_center">
+                Наши медицинские лицензии и другие разрешительные документы
+            </p>
+            <div class="section-decor">
+                <span class="section-decor-item"></span>
+                <span class="section-decor-item"></span>
+                <span class="section-decor-item"></span>
+                <span class="section-decor-item"></span>
+                <span class="section-decor-item"></span>
+                <span class="section-decor-item"></span>
+            </div>
+            <div class="documents__slider swiper">
+                <div class="documents__slider-wrapper swiper-wrapper">
+                    <a href="/assets/img/sections/documents/document.png" data-fancybox="documents" class="documents__slide swiper-slide">
+                        <img src="/assets/img/sections/documents/document.png" alt="Лицензия" class="documents__slide-img">
+                    </a>
+                    <a href="/assets/img/sections/documents/document.png" data-fancybox="documents" class="documents__slide swiper-slide">
+                        <img src="/assets/img/sections/documents/document.png" alt="Лицензия" class="documents__slide-img">
+                    </a>
+                    <a href="/assets/img/sections/documents/document.png" data-fancybox="documents" class="documents__slide swiper-slide">
+                        <img src="/assets/img/sections/documents/document.png" alt="Лицензия" class="documents__slide-img">
+                    </a>
+                    <a href="/assets/img/sections/documents/document.png" data-fancybox="documents" class="documents__slide swiper-slide">
+                        <img src="/assets/img/sections/documents/document.png" alt="Лицензия" class="documents__slide-img">
+                    </a>
+                    <a href="/assets/img/sections/documents/document.png" data-fancybox="documents" class="documents__slide swiper-slide">
+                        <img src="/assets/img/sections/documents/document.png" alt="Лицензия" class="documents__slide-img">
+                    </a>
+                    <a href="/assets/img/sections/documents/document.png" data-fancybox="documents" class="documents__slide swiper-slide">
+                        <img src="/assets/img/sections/documents/document.png" alt="Лицензия" class="documents__slide-img">
+                    </a>
+                    <a href="/assets/img/sections/documents/document.png" data-fancybox="documents" class="documents__slide swiper-slide">
+                        <img src="/assets/img/sections/documents/document.png" alt="Лицензия" class="documents__slide-img">
+                    </a>
+                    <a href="/assets/img/sections/documents/document.png" data-fancybox="documents" class="documents__slide swiper-slide">
+                        <img src="/assets/img/sections/documents/document.png" alt="Лицензия" class="documents__slide-img">
+                    </a>
+                </div>
+            </div>
+            <a href="#" class="documents__more-link btn">
+                Смотреть все лицензии
+            </a>
+        </div>
+    </section>
+    <section class="specialists section-offset">
+        <div class="specialists__container container">
+            <h2 class="specialists__title section-title">
+                Наши врачи
+            </h2>
+            <p class="specialists__descr section-descr section-descr_center">
+                Специалисты работающие в клинике «Ренессанс»
+            </p>
+            <div class="section-decor">
+                <span class="section-decor-item"></span>
+                <span class="section-decor-item"></span>
+                <span class="section-decor-item"></span>
+                <span class="section-decor-item"></span>
+                <span class="section-decor-item"></span>
+                <span class="section-decor-item"></span>
+            </div>
+            <div class="specialists__slider swiper">
+                <div class="specialists__slider-wrapper swiper-wrapper">
+                    <a href="#" class="specialists__slide swiper-slide">
+                        <picture class="specialists__slide-picture">
+                            <img src="/assets/img/sections/specialists/specialist-1.png" alt="Доктор с компьютером" class="specialists__slide-img">
+                        </picture>
+                        <div class="specialists__slide-info">
+                            <img src="/assets/img/sections/specialists/card-decor.svg" alt="" aria-label="presentation" class="specialists__slider-decor">
+                            <p class="specialists__slide-name">
+                                Шилов Глеб Леонидович
+                            </p>
+                            <p class="specialists__slide-role">
+                                Главный врач клиники
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#" class="specialists__slide swiper-slide">
+                        <picture class="specialists__slide-picture">
+                            <img src="/assets/img/sections/specialists/specialist-1.png" alt="Доктор с компьютером" class="specialists__slide-img">
+                        </picture>
+                        <div class="specialists__slide-info">
+                            <img src="/assets/img/sections/specialists/card-decor.svg" alt="" aria-label="presentation" class="specialists__slider-decor">
+                            <p class="specialists__slide-name">
+                                Шилов Глеб Леонидович
+                            </p>
+                            <p class="specialists__slide-role">
+                                Главный врач клиники
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#" class="specialists__slide swiper-slide">
+                        <picture class="specialists__slide-picture">
+                            <img src="/assets/img/sections/specialists/specialist-1.png" alt="Доктор с компьютером" class="specialists__slide-img">
+                        </picture>
+                        <div class="specialists__slide-info">
+                            <img src="/assets/img/sections/specialists/card-decor.svg" alt="" aria-label="presentation" class="specialists__slider-decor">
+                            <p class="specialists__slide-name">
+                                Шилов Глеб Леонидович
+                            </p>
+                            <p class="specialists__slide-role">
+                                Главный врач клиники
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#" class="specialists__slide swiper-slide">
+                        <picture class="specialists__slide-picture">
+                            <img src="/assets/img/sections/specialists/specialist-1.png" alt="Доктор с компьютером" class="specialists__slide-img">
+                        </picture>
+                        <div class="specialists__slide-info">
+                            <img src="/assets/img/sections/specialists/card-decor.svg" alt="" aria-label="presentation" class="specialists__slider-decor">
+                            <p class="specialists__slide-name">
+                                Шилов Глеб Леонидович
+                            </p>
+                            <p class="specialists__slide-role">
+                                Главный врач клиники
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#" class="specialists__slide swiper-slide">
+                        <picture class="specialists__slide-picture">
+                            <img src="/assets/img/sections/specialists/specialist-1.png" alt="Доктор с компьютером" class="specialists__slide-img">
+                        </picture>
+                        <div class="specialists__slide-info">
+                            <img src="/assets/img/sections/specialists/card-decor.svg" alt="" aria-label="presentation" class="specialists__slider-decor">
+                            <p class="specialists__slide-name">
+                                Шилов Глеб Леонидович
+                            </p>
+                            <p class="specialists__slide-role">
+                                Главный врач клиники
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#" class="specialists__slide swiper-slide">
+                        <picture class="specialists__slide-picture">
+                            <img src="/assets/img/sections/specialists/specialist-1.png" alt="Доктор с компьютером" class="specialists__slide-img">
+                        </picture>
+                        <div class="specialists__slide-info">
+                            <img src="/assets/img/sections/specialists/card-decor.svg" alt="" aria-label="presentation" class="specialists__slider-decor">
+                            <p class="specialists__slide-name">
+                                Шилов Глеб Леонидович
+                            </p>
+                            <p class="specialists__slide-role">
+                                Главный врач клиники
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <a href="#" class="specialists__more-link btn">
+                Смотреть всех врачей
+            </a>
         </div>
     </section>
 </main>

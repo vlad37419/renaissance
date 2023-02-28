@@ -1,0 +1,30 @@
+.about__title {
+    margin-bottom: 84px;
+}
+
+.about__wrapper {
+    display: flex;
+}
+
+.about__descr {
+    margin-bottom: 30px;
+}
+
+.about__descr:last-child {
+    margin-bottom: 0;
+}
+
+.about__picture {
+    min-width: 550px;
+    max-width: 550px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.about__img {
+    object-fit: cover;
+}
+
+.about__content {
+    margin-right: 70px;
+}

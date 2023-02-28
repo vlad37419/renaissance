@@ -1,0 +1,79 @@
+.promo {
+    padding-top: 40px;
+}
+
+.promo__container {
+    display: flex;
+    align-items: center;
+}
+
+.promo__img-wrapper {
+    display: block;
+    min-width: 530px;
+    position: relative;
+    margin-right: 90px;
+}
+
+.promo__badge {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1C7597;
+    border-radius: 100px 100px 0 0;
+    padding: 7px 20px;
+    width: 100%;
+    transition: background-color .2s ease;
+}
+
+.promo__badge-text {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 160%;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.promo__badge-icon {
+    margin-right: 10px;
+}
+
+.promo__badge-icon:last-child {
+    margin-right: 0;
+}
+
+.promo__title {
+    margin-bottom: 30px;
+}
+
+.promo__descr {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 160%;
+    color: #F04A25;
+    margin-bottom: 30px;
+}
+
+.promo__sub-descr {
+    margin-bottom: 50px;
+}
+
+.promo__btns {
+    display: flex;
+}
+
+.promo__btn {
+    margin-right: 20px;
+}
+
+.promo__btn:last-child {
+    margin-right: 0;
+}
+
+@media (min-width: 1025px) {
+    .promo__badge:hover {
+        background-color: #F04A25;
+    }
+}

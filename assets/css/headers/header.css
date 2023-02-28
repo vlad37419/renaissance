@@ -169,6 +169,11 @@
     transition: opacity .2s ease;
 }
 
+.menu__item.active > button.menu__link::after {
+    opacity: 1;
+    visibility: visible;
+}
+
 .menu__link-text {
     font-weight: 800;
     font-size: 16px;
@@ -188,6 +193,7 @@
     position: absolute;
     top: 100%;
     left: 0;
+    z-index: 10;
     min-width: max-content;
     background-color: #186380;
     opacity: 0;
@@ -196,10 +202,18 @@
     transition: opacity .2s ease, visibility .2s ease;
 }
 
-.menu__item:hover > .menu__sub-list {
+.menu__item.active > .menu__sub-list {
     opacity: 1;
     visibility: visible;
     pointer-events: all;
+}
+
+.menu__item > .menu__link svg {
+    transition: transform .2s ease;
+}
+
+.menu__item.active > .menu__link svg {
+    transform: rotate(180deg);
 }
 
 .menu__sub-item {
@@ -208,6 +222,7 @@
 }
 
 .menu__sub-link {
+    width: 100%;
     font-size: 16px;
     line-height: 160%;
     color: #fff;
@@ -216,6 +231,10 @@
     justify-content: space-between;
     padding: 12px 20px 12px 30px;
     transition: background-color .2s ease;
+}
+
+.menu__sub-item.active > .menu__sub-link {
+    background-color: #165973;
 }
 
 .menu__sub-link_pr-30 {
@@ -232,7 +251,7 @@
     background-color: #165973;
 }
 
-.menu__sub-item:hover .menu__sub-list {
+.menu__sub-item.active .menu__sub-list {
     opacity: 1;
     visibility: visible;
     pointer-events: all;
@@ -258,10 +277,6 @@
     .menu__item:hover .menu__link::after {
         opacity: 1;
         visibility: visible;
-    }
-
-    .menu__sub-item:hover .menu__sub-link {
-        background-color: #165973;
     }
 
     .menu__sub-item:hover .menu__sub-link {

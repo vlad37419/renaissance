@@ -125,7 +125,7 @@ body {
     opacity: 1;
 }
 
-:-ms-input-placeholder {
+::-ms-input-placeholder {
     color: #6A777D;
 }
 
@@ -134,6 +134,7 @@ body {
 }
 
 .btn {
+    display: block;
     padding: 14.5px 33.5px;
     font-weight: 800;
     font-size: 18px;
@@ -142,12 +143,120 @@ body {
     text-align: center;
     border: 1px solid #F04A25;
     border-radius: 10px;
+    background-color: #fff;
     transition: background-color .2s ease, color .2s ease;
 }
 
+.page-title {
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 160%;
+}
+
+.section-descr {
+    font-size: 18px;
+    line-height: 160%;
+    color: #6A777D;
+}
+
+.section-descr_center {
+    text-align: center;
+}
+
+.btn-main {
+    background-color: #F04A25;
+    border: 1px solid #F04A25;
+    border-radius: 10px;
+    padding: 22.5px 49.5px;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 160%;
+    color: #fff;
+    text-align: center;
+    transition: background-color .2s ease, color .2s ease;
+}
+
+.btn-main_color {
+    background-color: #1C7597;
+    border: 1px solid #1C7597;
+}
+
+.section-offset {
+    margin-bottom: 150px;
+}
+
+.section-title {
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 160%;
+    text-align: center;
+    position: relative;
+    padding: 0 110px;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.section-title::before,
+.section-title::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 70px;
+    height: 2px;
+    background-color: #F04A25;
+    border-radius: 10px;
+}
+
+.section-title::before {
+    left: 0;
+}
+
+.section-title::after {
+    right: 0;
+}
+
+.section-title_color {
+    color: #fff;
+    padding: 0;
+}
+
+.section-title_color::before,
+.section-title_color::after {
+    display: none;
+}
+
+.section-decor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.section-decor-item {
+    width: 8px;
+    height: 8px;
+    margin-right: 20px;
+    background-color: #1C7597;
+    border-radius: 50%;
+}
+
+.section-decor-item:last-child {
+    margin-right: 0;
+}
+
 @media (min-width: 1025px) {
-    .btn_transparent:hover {
+    .btn:hover {
         background-color: #F04A25;
         color: #fff;
+    }
+
+    .btn-main:hover {
+        background-color: transparent;
+        color: #F04A25;
+    }
+
+    .btn-main_color:hover {
+        color: #1C7597;
     }
 }
