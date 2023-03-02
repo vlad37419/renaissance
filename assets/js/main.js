@@ -3,6 +3,9 @@ function getHeight(el) {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
+    const body = document.querySelector('.body');
+
+
     // dropdown menu
     const menuBtns = document.querySelectorAll('button.menu__link');
     const menuSubBtns = document.querySelectorAll('button.menu__sub-link');
@@ -107,32 +110,100 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // accordion
-    const accorOpenBtns = document.querySelectorAll('.accor-open');
+    const ACCORDION_LIST          = 'data-accordion-list'
+    const ACCORDION_BUTTON        = 'data-accordion-button'
+    const ACCORDION_ARROW         = 'data-accordion-arrow'
+    const ACCORDION_CONTENT       = 'data-accordion-content'
+    const SECTION_OPENED          = 'active'
+    const ICON_ROTATED            = 'rotated'
 
-    for (let i = 0; i < accorOpenBtns.length; i += 1) {
-        let accorOpenBtn = accorOpenBtns[i];
-
-        accorOpenBtn.addEventListener('click', function () {
-            let accor = accorOpenBtn.closest('.accor');
-            let accorFull = accor.querySelector('.accor-full');
-            let accorFullContent = accor.querySelector('.accor-full-content');
-            let accorFullContentHeight = getHeight(accorFullContent);
-
-            if (accor.classList.contains('active')) {
-                accor.classList.remove('active');
-                accorFull.style.height = '0px';
-            } else {
-                document.querySelectorAll('.accor').forEach(function (el) {
-                    el.classList.remove('active');
-                    el.querySelector('.accor-full').style.height = '0px';
-                });
-                accor.classList.add('active');
-                accorFull.style.height = accorFullContentHeight + 'px';
+    class Accordion {
+        static apply(accordionNode) {
+            if (!accordionNode) {
+                return
             }
-        });
+
+            const acc = new Accordion()
+            acc.accordion = accordionNode
+            accordionNode.onclick = acc.onClick.bind(acc)
+        }
+
+        handleClick(button) {
+            const innerSection = button.nextElementSibling
+            const isOpened = innerSection.classList.contains(SECTION_OPENED)
+
+            if (isOpened) {
+                this.close(innerSection)
+                return
+            }
+            this.open(innerSection)
+        }
+
+        open(section) {
+            const accordion = section.querySelector(`[${ACCORDION_CONTENT}`).closest('.accor');
+            const accordionContent = section.querySelector(`[${ACCORDION_CONTENT}`)
+            const accordionList = accordionContent.querySelector(`[${ACCORDION_LIST}`)
+            const innerSectionHeight = accordionContent.clientHeight
+            let countOfScrollHeight = 0;
+            const allElementContentData = section.querySelectorAll(`[${ACCORDION_CONTENT}`)
+            accordion.classList.add(SECTION_OPENED)
+            section.classList.add(SECTION_OPENED)
+            this.rotateIconFor(section.previousElementSibling)
+
+            for (const item of allElementContentData) {
+                countOfScrollHeight = countOfScrollHeight + item.scrollHeight;
+            }
+
+            if (accordionContent.contains(accordionList)) {
+                section.style.maxHeight = `${innerSectionHeight + countOfScrollHeight}px`
+                return
+            }
+            section.style.maxHeight = `${innerSectionHeight}px`
+        }
+
+        close(section) {
+            const accordion = section.querySelector(`[${ACCORDION_CONTENT}`).closest('.accor');
+            section.style.maxHeight = 0
+            accordion.classList.remove(SECTION_OPENED)
+            section.classList.remove(SECTION_OPENED)
+            this.rotateIconFor(section.previousElementSibling)
+        }
+
+        rotateIconFor(button) {
+            const rotatedIconClass = ICON_ROTATED
+            const arrowElement = button.dataset.hasOwnProperty('accordionArrow') ?
+                button :
+                button.querySelector(`[${ACCORDION_ARROW}]`)
+
+            if (!arrowElement) {
+                return
+            }
+
+            const isOpened = arrowElement.classList.contains(rotatedIconClass)
+            if (!isOpened) {
+                arrowElement.classList.add(rotatedIconClass)
+                return
+            }
+            arrowElement.classList.remove(rotatedIconClass)
+        }
+
+        onClick(event) {
+            let button = event.target.closest(`[${ACCORDION_BUTTON}]`)
+            if (button && button.dataset.accordionButton !== undefined) {
+                this.handleClick(button)
+            }
+        }
     }
 
-    accorOpenBtns[0].click();
+    Accordion.apply(document.querySelector(`[${ACCORDION_LIST}`))
+
+    const accorWrapperList = document.querySelectorAll('.accor-wrapper');
+
+    if (accorWrapperList.length > 0) {
+        accorWrapperList.forEach(function (elem) {
+            elem.querySelector('.accor-open').click();
+        });
+    }
 
     // reviews slider
     const articlesSliderCheck = document.querySelectorAll('.articles__slider');
@@ -144,4 +215,14 @@ document.addEventListener('DOMContentLoaded', function () {
             touchRatio: 0,
         });
     }
+
+    // header menu mobile
+    let headerMenuButton = document.querySelector('.menu-burger');
+    let headerMenu = document.querySelector('.mobile-menu');
+
+    headerMenuButton.addEventListener('click', function () {
+        headerMenuButton.classList.toggle('active');
+        headerMenu.classList.toggle('active');
+        body.classList.toggle('lock');
+    });
 });

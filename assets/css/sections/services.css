@@ -2,30 +2,23 @@
     margin-bottom: 120px;
 }
 
-.services__title {
-    margin-bottom: 24px;
-}
-
-.services__descr {
-    margin-bottom: 40px;
-}
-
 .services__cards {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -15px;
 }
 
 .card-service {
-    flex: 0 1 33.333%;
-    padding: 0 15px;
+    flex: 0 1 calc(33.333% - 20px);
+    margin-right: 30px;
     margin-bottom: 30px;
+}
+
+.card-service:nth-child(3n) {
+    margin-right: 0;
 }
 
 .card-service__picture {
     display: flex;
-    align-items: center;
-    justify-content: center;
     height: 230px;
     overflow: hidden;
     border-radius: 10px 10px 0 0;
@@ -35,6 +28,7 @@
     object-fit: cover;
     object-position: top;
     max-height: 230px;
+    width: 100%;
 }
 
 .card-service__content {
@@ -45,6 +39,7 @@
     align-items: center;
     justify-content: space-between;
     transition: background-color .2s ease;
+    flex-grow: 1;
 }
 
 .card-service__text {
@@ -58,6 +53,12 @@
     transition: transform .2s ease;
 }
 
+.card-service__wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
 @media (min-width: 1025px) {
     .card-service__wrapper:hover .card-service__content {
         background-color: #F04A25;
@@ -65,5 +66,55 @@
 
     .card-service__wrapper:hover .card-service__arrow {
         transform: translateX(20px);
+    }
+}
+
+@media (max-width: 991px) {
+    .services {
+        margin-bottom: 60px;
+    }
+
+    .card-service {
+        flex: 0 1 calc(50% - 5px);
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .card-service:nth-child(3n) {
+        margin-right: 10px;
+    }
+
+    .card-service:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    .card-service__text {
+        font-size: 14px;
+        line-height: 140%;
+    }
+
+    .card-service__arrow {
+        width: 20px;
+        height: 20px;
+    }
+
+    .card-service__picture {
+        min-height: 150px;
+        height: initial;
+    }
+
+    .card-service__content {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 575px) {
+    .card-service {
+        flex: 0 1 100%;
+        margin-right: 0;
+    }
+
+    .card-service:nth-child(3n) {
+        margin-right: 0;
     }
 }

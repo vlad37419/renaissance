@@ -114,9 +114,13 @@ body {
     min-width: 320px;
 }
 
+body.lock {
+    overflow: hidden;
+}
+
 .container {
-    max-width: 1450px;
-    padding: 0 20px;
+    max-width: 1440px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
@@ -274,8 +278,8 @@ body {
 }
 
 .accor-full {
-    transition: height .2s ease;
-    height: 0;
+    transition: max-height .2s ease;
+    max-height: 0;
     overflow: hidden;
 }
 
@@ -396,5 +400,84 @@ body {
     .form-callback__submit:hover {
         background-color: #F04A25;
         color: #fff;
+    }
+}
+
+@media (max-width: 1400px) {
+    .btn-main {
+        padding: 14px 20px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .logo__img {
+        width: 220px;
+    }
+
+    .btn {
+        font-size: 14px;
+        line-height: 140%;
+    }
+
+    .page-title {
+        font-size: 40px;
+        line-height: 140%;
+    }
+}
+
+@media (max-width: 991px) {
+    .main {
+        padding-top: 60px;
+    }
+
+    .logo__img {
+        width: initial;
+    }
+
+    .page-title {
+        font-size: 26px;
+    }
+
+    .section-descr {
+        font-size: 14px;
+        line-height: 140%;
+    }
+
+    .btn-main {
+        font-size: 14px;
+        line-height: 140%;
+    }
+
+    .section-offset {
+        margin-bottom: 70px;
+    }
+
+    .section-title {
+        font-size: 22px;
+        line-height: 140%;
+        text-align: left;
+        padding: 0;
+        margin: 0 0 50px;
+    }
+
+    .section-title::before {
+        display: none;
+    }
+
+    .section-title::after {
+        top: auto;
+        right: auto;
+        left: 0;
+        bottom: -25px;
+        transform: translateY(-50%);
+    }
+
+    .section-descr {
+        text-align: left;
+        margin-bottom: 30px;
+    }
+
+    .section-decor {
+        display: none;
     }
 }
