@@ -1,0 +1,28 @@
+.callback {
+    background-image: url("/assets/img/sections/callback/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 150px 0;
+}
+
+.callback__descr {
+    font-size: 18px;
+    line-height: 160%;
+    color: #fff;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.callback__form {
+    max-width: 925px;
+    margin: 0 auto;
+}
+
+.callback__form .form-callback__submit {
+    margin-bottom: 20px;
+}
+
+.callback__form .form-callback__text {
+    text-align: center;
+}

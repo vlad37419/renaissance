@@ -1,0 +1,32 @@
+.articles__slider {
+    margin-bottom: 70px;
+}
+
+.articles__slide-picture {
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 290px;
+    margin-bottom: 30px;
+}
+
+.articles__slide-title {
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 160%;
+    color: #1C7597;
+    margin-bottom: 20px;
+    transition: color .2s ease;
+}
+
+.articles__slide-text {
+    font-size: 18px;
+    line-height: 160%;
+    color: #6A777D;
+}
+
+@media (min-width: 1025px) {
+    .articles__slide:hover .articles__slide-title {
+        color: #F04A25;
+    }
+}

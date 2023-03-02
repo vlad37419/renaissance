@@ -19,6 +19,14 @@
     <link rel="stylesheet" href="/assets/css/sections/consultation.css">
     <link rel="stylesheet" href="/assets/css/sections/documents.css">
     <link rel="stylesheet" href="/assets/css/sections/specialists.css">
+    <link rel="stylesheet" href="/assets/css/sections/prices.css">
+    <link rel="stylesheet" href="/assets/css/sections/promotions.css">
+    <link rel="stylesheet" href="/assets/css/sections/gallery.css">
+    <link rel="stylesheet" href="/assets/css/sections/reviews.css">
+    <link rel="stylesheet" href="/assets/css/sections/faq.css">
+    <link rel="stylesheet" href="/assets/css/sections/callback.css">
+    <link rel="stylesheet" href="/assets/css/sections/articles.css">
+    <link rel="stylesheet" href="/assets/css/footers/footer.css">
     <script defer src="/assets/js/build/fancybox.js"></script>
     <script defer src="/assets/js/build/swiper.js"></script>
     <script defer src="/assets/js/main.js"></script>
@@ -835,7 +843,8 @@
         <div class="consultation__container container">
             <div class="consultation__wrapper">
                 <picture class="consultation__picture">
-                    <img src="/assets/img/sections/consultation/doctor.png" alt="Врач с компьютером" class="consultation__img">
+                    <img src="/assets/img/sections/consultation/doctor.png" alt="Врач с компьютером"
+                         class="consultation__img">
                 </picture>
                 <div class="consultation__content">
                     <h2 class="consultation__title section-title section-title_color">
@@ -845,19 +854,21 @@
                         Специалист по телефону соберёт первичный анамнез, отправит ближайшую мобильную бригаду врачей,
                         сообщит о стоимости процедуры и времени прибытия нарколога.
                     </p>
-                    <form action="" method="post" class="consultation__form">
-                        <div class="consultation__form-wrapper">
-                            <label class="consultation__form-label">
-                                <input placeholder="Ваше имя" type="text" name="name" class="consultation__form-input name">
+                    <form action="" method="post" class="consultation__form form-callback">
+                        <div class="form-callback__wrapper">
+                            <label class="form-callback__label">
+                                <input placeholder="Ваше имя" type="text" name="name"
+                                       class="form-callback__input name">
                             </label>
-                            <label class="consultation__form-label">
-                                <input placeholder="Телефон" type="tel" name="phone" class="consultation__form-input phone">
+                            <label class="form-callback__label">
+                                <input placeholder="Телефон" type="tel" name="phone"
+                                       class="form-callback__input phone">
                             </label>
                         </div>
-                        <button type="submit" class="consultation__form-submit">
+                        <button type="submit" class="form-callback__submit">
                             Отправить заявку
                         </button>
-                        <p class="consultation__form-text">
+                        <p class="form-callback__text">
                             Нажимая на кнопку «Отправить заявку» вы соглашаетесь с обработкой персональных данных
                         </p>
                     </form>
@@ -883,33 +894,49 @@
             </div>
             <div class="documents__slider swiper">
                 <div class="documents__slider-wrapper swiper-wrapper">
-                    <a href="/assets/img/sections/documents/document.png" data-fancybox="documents" class="documents__slide swiper-slide">
-                        <img src="/assets/img/sections/documents/document.png" alt="Лицензия" class="documents__slide-img">
+                    <a href="/assets/img/sections/documents/document.png" data-fancybox="documents"
+                       class="documents__slide swiper-slide">
+                        <img src="/assets/img/sections/documents/document.png" alt="Лицензия"
+                             class="documents__slide-img">
                     </a>
-                    <a href="/assets/img/sections/documents/document.png" data-fancybox="documents" class="documents__slide swiper-slide">
-                        <img src="/assets/img/sections/documents/document.png" alt="Лицензия" class="documents__slide-img">
+                    <a href="/assets/img/sections/documents/document.png" data-fancybox="documents"
+                       class="documents__slide swiper-slide">
+                        <img src="/assets/img/sections/documents/document.png" alt="Лицензия"
+                             class="documents__slide-img">
                     </a>
-                    <a href="/assets/img/sections/documents/document.png" data-fancybox="documents" class="documents__slide swiper-slide">
-                        <img src="/assets/img/sections/documents/document.png" alt="Лицензия" class="documents__slide-img">
+                    <a href="/assets/img/sections/documents/document.png" data-fancybox="documents"
+                       class="documents__slide swiper-slide">
+                        <img src="/assets/img/sections/documents/document.png" alt="Лицензия"
+                             class="documents__slide-img">
                     </a>
-                    <a href="/assets/img/sections/documents/document.png" data-fancybox="documents" class="documents__slide swiper-slide">
-                        <img src="/assets/img/sections/documents/document.png" alt="Лицензия" class="documents__slide-img">
+                    <a href="/assets/img/sections/documents/document.png" data-fancybox="documents"
+                       class="documents__slide swiper-slide">
+                        <img src="/assets/img/sections/documents/document.png" alt="Лицензия"
+                             class="documents__slide-img">
                     </a>
-                    <a href="/assets/img/sections/documents/document.png" data-fancybox="documents" class="documents__slide swiper-slide">
-                        <img src="/assets/img/sections/documents/document.png" alt="Лицензия" class="documents__slide-img">
+                    <a href="/assets/img/sections/documents/document.png" data-fancybox="documents"
+                       class="documents__slide swiper-slide">
+                        <img src="/assets/img/sections/documents/document.png" alt="Лицензия"
+                             class="documents__slide-img">
                     </a>
-                    <a href="/assets/img/sections/documents/document.png" data-fancybox="documents" class="documents__slide swiper-slide">
-                        <img src="/assets/img/sections/documents/document.png" alt="Лицензия" class="documents__slide-img">
+                    <a href="/assets/img/sections/documents/document.png" data-fancybox="documents"
+                       class="documents__slide swiper-slide">
+                        <img src="/assets/img/sections/documents/document.png" alt="Лицензия"
+                             class="documents__slide-img">
                     </a>
-                    <a href="/assets/img/sections/documents/document.png" data-fancybox="documents" class="documents__slide swiper-slide">
-                        <img src="/assets/img/sections/documents/document.png" alt="Лицензия" class="documents__slide-img">
+                    <a href="/assets/img/sections/documents/document.png" data-fancybox="documents"
+                       class="documents__slide swiper-slide">
+                        <img src="/assets/img/sections/documents/document.png" alt="Лицензия"
+                             class="documents__slide-img">
                     </a>
-                    <a href="/assets/img/sections/documents/document.png" data-fancybox="documents" class="documents__slide swiper-slide">
-                        <img src="/assets/img/sections/documents/document.png" alt="Лицензия" class="documents__slide-img">
+                    <a href="/assets/img/sections/documents/document.png" data-fancybox="documents"
+                       class="documents__slide swiper-slide">
+                        <img src="/assets/img/sections/documents/document.png" alt="Лицензия"
+                             class="documents__slide-img">
                     </a>
                 </div>
             </div>
-            <a href="#" class="documents__more-link btn">
+            <a href="#" class="documents__more-link btn more-link">
                 Смотреть все лицензии
             </a>
         </div>
@@ -934,10 +961,12 @@
                 <div class="specialists__slider-wrapper swiper-wrapper">
                     <a href="#" class="specialists__slide swiper-slide">
                         <picture class="specialists__slide-picture">
-                            <img src="/assets/img/sections/specialists/specialist-1.png" alt="Доктор с компьютером" class="specialists__slide-img">
+                            <img src="/assets/img/sections/specialists/specialist-1.png" alt="Доктор с компьютером"
+                                 class="specialists__slide-img">
                         </picture>
                         <div class="specialists__slide-info">
-                            <img src="/assets/img/sections/specialists/card-decor.svg" alt="" aria-label="presentation" class="specialists__slider-decor">
+                            <img src="/assets/img/sections/specialists/card-decor.svg" alt="" aria-label="presentation"
+                                 class="specialists__slider-decor">
                             <p class="specialists__slide-name">
                                 Шилов Глеб Леонидович
                             </p>
@@ -948,10 +977,12 @@
                     </a>
                     <a href="#" class="specialists__slide swiper-slide">
                         <picture class="specialists__slide-picture">
-                            <img src="/assets/img/sections/specialists/specialist-1.png" alt="Доктор с компьютером" class="specialists__slide-img">
+                            <img src="/assets/img/sections/specialists/specialist-1.png" alt="Доктор с компьютером"
+                                 class="specialists__slide-img">
                         </picture>
                         <div class="specialists__slide-info">
-                            <img src="/assets/img/sections/specialists/card-decor.svg" alt="" aria-label="presentation" class="specialists__slider-decor">
+                            <img src="/assets/img/sections/specialists/card-decor.svg" alt="" aria-label="presentation"
+                                 class="specialists__slider-decor">
                             <p class="specialists__slide-name">
                                 Шилов Глеб Леонидович
                             </p>
@@ -962,10 +993,12 @@
                     </a>
                     <a href="#" class="specialists__slide swiper-slide">
                         <picture class="specialists__slide-picture">
-                            <img src="/assets/img/sections/specialists/specialist-1.png" alt="Доктор с компьютером" class="specialists__slide-img">
+                            <img src="/assets/img/sections/specialists/specialist-1.png" alt="Доктор с компьютером"
+                                 class="specialists__slide-img">
                         </picture>
                         <div class="specialists__slide-info">
-                            <img src="/assets/img/sections/specialists/card-decor.svg" alt="" aria-label="presentation" class="specialists__slider-decor">
+                            <img src="/assets/img/sections/specialists/card-decor.svg" alt="" aria-label="presentation"
+                                 class="specialists__slider-decor">
                             <p class="specialists__slide-name">
                                 Шилов Глеб Леонидович
                             </p>
@@ -976,10 +1009,12 @@
                     </a>
                     <a href="#" class="specialists__slide swiper-slide">
                         <picture class="specialists__slide-picture">
-                            <img src="/assets/img/sections/specialists/specialist-1.png" alt="Доктор с компьютером" class="specialists__slide-img">
+                            <img src="/assets/img/sections/specialists/specialist-1.png" alt="Доктор с компьютером"
+                                 class="specialists__slide-img">
                         </picture>
                         <div class="specialists__slide-info">
-                            <img src="/assets/img/sections/specialists/card-decor.svg" alt="" aria-label="presentation" class="specialists__slider-decor">
+                            <img src="/assets/img/sections/specialists/card-decor.svg" alt="" aria-label="presentation"
+                                 class="specialists__slider-decor">
                             <p class="specialists__slide-name">
                                 Шилов Глеб Леонидович
                             </p>
@@ -990,10 +1025,12 @@
                     </a>
                     <a href="#" class="specialists__slide swiper-slide">
                         <picture class="specialists__slide-picture">
-                            <img src="/assets/img/sections/specialists/specialist-1.png" alt="Доктор с компьютером" class="specialists__slide-img">
+                            <img src="/assets/img/sections/specialists/specialist-1.png" alt="Доктор с компьютером"
+                                 class="specialists__slide-img">
                         </picture>
                         <div class="specialists__slide-info">
-                            <img src="/assets/img/sections/specialists/card-decor.svg" alt="" aria-label="presentation" class="specialists__slider-decor">
+                            <img src="/assets/img/sections/specialists/card-decor.svg" alt="" aria-label="presentation"
+                                 class="specialists__slider-decor">
                             <p class="specialists__slide-name">
                                 Шилов Глеб Леонидович
                             </p>
@@ -1004,10 +1041,12 @@
                     </a>
                     <a href="#" class="specialists__slide swiper-slide">
                         <picture class="specialists__slide-picture">
-                            <img src="/assets/img/sections/specialists/specialist-1.png" alt="Доктор с компьютером" class="specialists__slide-img">
+                            <img src="/assets/img/sections/specialists/specialist-1.png" alt="Доктор с компьютером"
+                                 class="specialists__slide-img">
                         </picture>
                         <div class="specialists__slide-info">
-                            <img src="/assets/img/sections/specialists/card-decor.svg" alt="" aria-label="presentation" class="specialists__slider-decor">
+                            <img src="/assets/img/sections/specialists/card-decor.svg" alt="" aria-label="presentation"
+                                 class="specialists__slider-decor">
                             <p class="specialists__slide-name">
                                 Шилов Глеб Леонидович
                             </p>
@@ -1018,11 +1057,1125 @@
                     </a>
                 </div>
             </div>
-            <a href="#" class="specialists__more-link btn">
+            <a href="#" class="specialists__more-link btn more-link">
                 Смотреть всех врачей
             </a>
         </div>
     </section>
+    <section class="prices section-offset">
+        <div class="prices__container container">
+            <h2 class="prices__title section-title">
+                Цены на услуги
+            </h2>
+            <p class="prices__descr section-descr section-descr_center">
+                Стоимость услуг наркологической клиники «Ренессанс»
+            </p>
+            <div class="section-decor">
+                <span class="section-decor-item"></span>
+                <span class="section-decor-item"></span>
+                <span class="section-decor-item"></span>
+                <span class="section-decor-item"></span>
+                <span class="section-decor-item"></span>
+                <span class="section-decor-item"></span>
+            </div>
+            <div class="prices__table">
+                <div class="prices__table-head">
+                    <div class="prices__table-column">
+                        <p class="prices__table-text">
+                            Наименование услуг
+                        </p>
+                    </div>
+                    <div class="prices__table-column">
+                        <p class="prices__table-text">
+                            Стоимость (руб.)
+                        </p>
+                    </div>
+                    <div class="prices__table-column"></div>
+                </div>
+                <div class="prices__table-body">
+                    <div class="prices__table-row">
+                        <div class="prices__table-column">
+                            <p class="prices__table-text prices__table-text_name">
+                                Вызов нарколога на дом
+                            </p>
+                        </div>
+                        <div class="prices__table-column">
+                            <p class="prices__table-text prices__table-text_price">
+                                от 1600 ₽
+                            </p>
+                        </div>
+                        <div class="prices__table-column">
+                            <button class="prices__table-btn btn-main">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                    <div class="prices__table-row">
+                        <div class="prices__table-column">
+                            <p class="prices__table-text prices__table-text_name">
+                                Вывод из запоя
+                            </p>
+                        </div>
+                        <div class="prices__table-column">
+                            <p class="prices__table-text prices__table-text_price">
+                                от 2400 ₽
+                            </p>
+                        </div>
+                        <div class="prices__table-column">
+                            <button class="prices__table-btn btn-main">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                    <div class="prices__table-row">
+                        <div class="prices__table-column">
+                            <p class="prices__table-text prices__table-text_name">
+                                Капельница от похмелья
+                            </p>
+                        </div>
+                        <div class="prices__table-column">
+                            <p class="prices__table-text prices__table-text_price">
+                                от 2400 ₽
+                            </p>
+                        </div>
+                        <div class="prices__table-column">
+                            <button class="prices__table-btn btn-main">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                    <div class="prices__table-row">
+                        <div class="prices__table-column">
+                            <p class="prices__table-text prices__table-text_name">
+                                Кодирование от алкоголизма
+                            </p>
+                        </div>
+                        <div class="prices__table-column">
+                            <p class="prices__table-text prices__table-text_price">
+                                от 3500 ₽
+                            </p>
+                        </div>
+                        <div class="prices__table-column">
+                            <button class="prices__table-btn btn-main">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                    <div class="prices__table-row">
+                        <div class="prices__table-column">
+                            <p class="prices__table-text prices__table-text_name">
+                                Лечение алкоголизма в стационаре
+                            </p>
+                        </div>
+                        <div class="prices__table-column">
+                            <p class="prices__table-text prices__table-text_price">
+                                от 3000 ₽ в день
+                            </p>
+                        </div>
+                        <div class="prices__table-column">
+                            <button class="prices__table-btn btn-main">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                    <div class="prices__table-row">
+                        <div class="prices__table-column">
+                            <p class="prices__table-text prices__table-text_name">
+                                Лечение наркомании в стационаре
+                            </p>
+                        </div>
+                        <div class="prices__table-column">
+                            <p class="prices__table-text prices__table-text_price">
+                                от 3000 ₽ в день
+                            </p>
+                        </div>
+                        <div class="prices__table-column">
+                            <button class="prices__table-btn btn-main">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                    <div class="prices__table-row">
+                        <div class="prices__table-column">
+                            <p class="prices__table-text prices__table-text_name">
+                                Медицинская интервенция (принудительное лечение)
+                            </p>
+                        </div>
+                        <div class="prices__table-column">
+                            <p class="prices__table-text prices__table-text_price">
+                                от 4000 ₽
+                            </p>
+                        </div>
+                        <div class="prices__table-column">
+                            <button class="prices__table-btn btn-main">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                    <div class="prices__table-row">
+                        <div class="prices__table-column">
+                            <p class="prices__table-text prices__table-text_name">
+                                Реабилитация зависимых
+                            </p>
+                        </div>
+                        <div class="prices__table-column">
+                            <p class="prices__table-text prices__table-text_price">
+                                от 35000 ₽ в месяц
+                            </p>
+                        </div>
+                        <div class="prices__table-column">
+                            <button class="prices__table-btn btn-main">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                    <div class="prices__table-row">
+                        <div class="prices__table-column">
+                            <p class="prices__table-text prices__table-text_name">
+                                Перевозка лежачих больных
+                            </p>
+                        </div>
+                        <div class="prices__table-column">
+                            <p class="prices__table-text prices__table-text_price">
+                                от 2500 ₽
+                            </p>
+                        </div>
+                        <div class="prices__table-column">
+                            <button class="prices__table-btn btn-main">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="prices__more-link btn more-link">
+                Смотреть все цены
+            </a>
+        </div>
+    </section>
+    <section class="promotions section-offset">
+        <div class="promotions__container container">
+            <h2 class="prices__title section-title">
+                Наши акции
+            </h2>
+            <p class="prices__descr section-descr section-descr_center">
+                Скидки и акционные предложения наркологической клиники «Ренессанс»
+            </p>
+            <div class="section-decor">
+                <span class="section-decor-item"></span>
+                <span class="section-decor-item"></span>
+                <span class="section-decor-item"></span>
+                <span class="section-decor-item"></span>
+                <span class="section-decor-item"></span>
+                <span class="section-decor-item"></span>
+            </div>
+            <div class="promotions__cards row">
+                <div class="promotions__card col-33">
+                    <a href="#" class="promotions__card-wrapper">
+                        <img src="/assets/img/sections/promotions/card-decor.svg" alt="" aria-label="presentation"
+                             class="promotions__card-decor">
+                        <img src="/assets/img/sections/promotions/aid-kit.png" alt="" aria-label="presentation"
+                             class="promotions__card-presentation">
+                        <p class="promotions__card-sticker">
+                            Акция
+                        </p>
+                        <p class="promotions__card-name">
+                            Выезд нарколога на дом
+                        </p>
+                        <p class="promotions__card-discount">
+                            1600 ₽
+                        </p>
+                    </a>
+                </div>
+                <div class="promotions__card col-33">
+                    <a href="#" class="promotions__card-wrapper">
+                        <img src="/assets/img/sections/promotions/card-decor.svg" alt="" aria-label="presentation"
+                             class="promotions__card-decor">
+                        <img src="/assets/img/sections/promotions/dropper.png" alt="" aria-label="presentation"
+                             class="promotions__card-presentation">
+                        <p class="promotions__card-sticker">
+                            Акция
+                        </p>
+                        <p class="promotions__card-name">
+                            Стандартная капельница
+                        </p>
+                        <p class="promotions__card-discount">
+                            2000 ₽
+                        </p>
+                    </a>
+                </div>
+                <div class="promotions__card col-33">
+                    <a href="#" class="promotions__card-wrapper">
+                        <img src="/assets/img/sections/promotions/card-decor.svg" alt="" aria-label="presentation"
+                             class="promotions__card-decor">
+                        <img src="/assets/img/sections/promotions/ak-47.png" alt="" aria-label="presentation"
+                             class="promotions__card-presentation">
+                        <p class="promotions__card-sticker">
+                            Скидка
+                        </p>
+                        <p class="promotions__card-name">
+                            Для семей мобилизованных
+                        </p>
+                        <p class="promotions__card-discount">
+                            10%
+                        </p>
+                    </a>
+                </div>
+                </a>
+            </div>
+            <a href="#" class="promotions__more-link btn more-link">
+                Смотреть все акции
+            </a>
+    </section>
+    <section class="gallery section-offset">
+        <div class="gallery__container container">
+            <h2 class="gallery__title section-title">
+                Фото клиники
+            </h2>
+            <p class="gallery__descr section-descr section-descr_center">
+                Фотографии палат и кабинетов наркологической клиники «Ренессанс»
+            </p>
+            <div class="section-decor">
+                <span class="section-decor-item"></span>
+                <span class="section-decor-item"></span>
+                <span class="section-decor-item"></span>
+                <span class="section-decor-item"></span>
+                <span class="section-decor-item"></span>
+                <span class="section-decor-item"></span>
+            </div>
+            <div class="gallery__slider swiper">
+                <div class="gallery__slider-wrapper swiper-wrapper">
+                    <a href="/assets/img/sections/gallery/test.png" data-fancybox="gallery"
+                       class="gallery__slide swiper-slide">
+                        <img src="/assets/img/sections/gallery/test.png" alt="Фото клиники" class="gallery__slide-img">
+                    </a>
+                    <a href="/assets/img/sections/gallery/test.png" data-fancybox="gallery"
+                       class="gallery__slide swiper-slide">
+                        <img src="/assets/img/sections/gallery/test.png" alt="Фото клиники" class="gallery__slide-img">
+                    </a>
+                    <a href="/assets/img/sections/gallery/test.png" data-fancybox="gallery"
+                       class="gallery__slide swiper-slide">
+                        <img src="/assets/img/sections/gallery/test.png" alt="Фото клиники" class="gallery__slide-img">
+                    </a>
+                    <a href="/assets/img/sections/gallery/test.png" data-fancybox="gallery"
+                       class="gallery__slide swiper-slide">
+                        <img src="/assets/img/sections/gallery/test.png" alt="Фото клиники" class="gallery__slide-img">
+                    </a>
+                    <a href="/assets/img/sections/gallery/test.png" data-fancybox="gallery"
+                       class="gallery__slide swiper-slide">
+                        <img src="/assets/img/sections/gallery/test.png" alt="Фото клиники" class="gallery__slide-img">
+                    </a>
+                    <a href="/assets/img/sections/gallery/test.png" data-fancybox="gallery"
+                       class="gallery__slide swiper-slide">
+                        <img src="/assets/img/sections/gallery/test.png" alt="Фото клиники" class="gallery__slide-img">
+                    </a>
+                    <a href="/assets/img/sections/gallery/test.png" data-fancybox="gallery"
+                       class="gallery__slide swiper-slide">
+                        <img src="/assets/img/sections/gallery/test.png" alt="Фото клиники" class="gallery__slide-img">
+                    </a>
+                    <a href="/assets/img/sections/gallery/test.png" data-fancybox="gallery"
+                       class="gallery__slide swiper-slide">
+                        <img src="/assets/img/sections/gallery/test.png" alt="Фото клиники" class="gallery__slide-img">
+                    </a>
+                    <a href="/assets/img/sections/gallery/test.png" data-fancybox="gallery"
+                       class="gallery__slide swiper-slide">
+                        <img src="/assets/img/sections/gallery/test.png" alt="Фото клиники" class="gallery__slide-img">
+                    </a>
+                    <a href="/assets/img/sections/gallery/test.png" data-fancybox="gallery"
+                       class="gallery__slide swiper-slide">
+                        <img src="/assets/img/sections/gallery/test.png" alt="Фото клиники" class="gallery__slide-img">
+                    </a>
+                    <a href="/assets/img/sections/gallery/test.png" data-fancybox="gallery"
+                       class="gallery__slide swiper-slide">
+                        <img src="/assets/img/sections/gallery/test.png" alt="Фото клиники" class="gallery__slide-img">
+                    </a>
+                    <a href="/assets/img/sections/gallery/test.png" data-fancybox="gallery"
+                       class="gallery__slide swiper-slide">
+                        <img src="/assets/img/sections/gallery/test.png" alt="Фото клиники" class="gallery__slide-img">
+                    </a>
+                </div>
+            </div>
+            <a href="#" class="gallery__more-link btn more-link">
+                Смотреть все фото клиники
+            </a>
+        </div>
+    </section>
+    <section class="reviews section-offset">
+        <div class="reviews__container container">
+            <h2 class="reviews__title section-title">
+                Отзывы клиентов
+            </h2>
+            <p class="reviews__descr section-descr section-descr_center">
+                Отзывы клиентов, проходивших лечение в нашей наркологической клинике
+            </p>
+            <div class="section-decor">
+                <span class="section-decor-item"></span>
+                <span class="section-decor-item"></span>
+                <span class="section-decor-item"></span>
+                <span class="section-decor-item"></span>
+                <span class="section-decor-item"></span>
+                <span class="section-decor-item"></span>
+            </div>
+            <div class="reviews__slider swiper">
+                <div class="reviews__slider-wrapper swiper-wrapper">
+                    <div class="reviews__slide review swiper-slide">
+                        <div class="review__top">
+                            <picture class="review__picture">
+                                <img src="/assets/img/sections/reviews/default.png" alt="Фото Сергея Иванова"
+                                     class="review__avatar">
+                            </picture>
+                            <div class="review__info">
+                                <p class="review__name">
+                                    Сергей Иванов
+                                </p>
+                                <p class="review__age">
+                                    39 лет
+                                </p>
+                                <p class="review__service">
+                                    Кодирование от алкоголя
+                                </p>
+                            </div>
+                        </div>
+                        <p class="review__text">
+                            Равным образом реализация намеченных плановых заданий позволяет выполнять важные задания по
+                            разработке позиций, занимаемых участниками в отношении поставленных задач. С другой стороны
+                            сложившаяся структура организации в значительной степени обуславливает создание
+                            соответствующий условий активизации. Идейные соображения высшего порядка, а также начало
+                            повседневной работы по формированию позиции позволяет выполнять важные задания по разработке
+                            модели развития.
+                        </p>
+                    </div>
+                    <div class="reviews__slide review swiper-slide">
+                        <div class="review__top">
+                            <picture class="review__picture">
+                                <img src="/assets/img/sections/reviews/default.png" alt="Фото Сергея Иванова"
+                                     class="review__avatar">
+                            </picture>
+                            <div class="review__info">
+                                <p class="review__name">
+                                    Сергей Иванов
+                                </p>
+                                <p class="review__age">
+                                    39 лет
+                                </p>
+                                <p class="review__service">
+                                    Кодирование от алкоголя
+                                </p>
+                            </div>
+                        </div>
+                        <p class="review__text">
+                            Разнообразный и богатый опыт консультация с широким активом требуют определения и уточнения
+                            позиций, занимаемых участниками в отношении поставленных задач. Задача организации, в
+                            особенности же начало повседневной работы по формированию позиции требуют определения и
+                            уточнения модели развития.
+                        </p>
+                    </div>
+                    <div class="reviews__slide review swiper-slide">
+                        <div class="review__top">
+                            <picture class="review__picture">
+                                <img src="/assets/img/sections/reviews/default.png" alt="Фото Сергея Иванова"
+                                     class="review__avatar">
+                            </picture>
+                            <div class="review__info">
+                                <p class="review__name">
+                                    Сергей Иванов
+                                </p>
+                                <p class="review__age">
+                                    39 лет
+                                </p>
+                                <p class="review__service">
+                                    Кодирование от алкоголя
+                                </p>
+                            </div>
+                        </div>
+                        <p class="review__text">
+                            С другой стороны новая модель организационной деятельности требуют определения и уточнения
+                            форм развития. Идейные соображения высшего порядка, а также постоянное
+                            информационно-пропагандистское обеспечение нашей деятельности требуют от нас анализа модели
+                            развития.
+                        </p>
+                    </div>
+                    <div class="reviews__slide review swiper-slide">
+                        <div class="review__top">
+                            <picture class="review__picture">
+                                <img src="/assets/img/sections/reviews/default.png" alt="Фото Сергея Иванова"
+                                     class="review__avatar">
+                            </picture>
+                            <div class="review__info">
+                                <p class="review__name">
+                                    Сергей Иванов
+                                </p>
+                                <p class="review__age">
+                                    39 лет
+                                </p>
+                                <p class="review__service">
+                                    Кодирование от алкоголя
+                                </p>
+                            </div>
+                        </div>
+                        <p class="review__text">
+                            Равным образом реализация намеченных плановых заданий позволяет выполнять важные задания по
+                            разработке позиций, занимаемых участниками в отношении поставленных задач. С другой стороны
+                            сложившаяся структура организации в значительной степени обуславливает создание
+                            соответствующий условий активизации. Идейные соображения высшего порядка, а также начало
+                            повседневной работы по формированию позиции позволяет выполнять важные задания по разработке
+                            модели развития.
+                        </p>
+                    </div>
+                    <div class="reviews__slide review swiper-slide">
+                        <div class="review__top">
+                            <picture class="review__picture">
+                                <img src="/assets/img/sections/reviews/default.png" alt="Фото Сергея Иванова"
+                                     class="review__avatar">
+                            </picture>
+                            <div class="review__info">
+                                <p class="review__name">
+                                    Сергей Иванов
+                                </p>
+                                <p class="review__age">
+                                    39 лет
+                                </p>
+                                <p class="review__service">
+                                    Кодирование от алкоголя
+                                </p>
+                            </div>
+                        </div>
+                        <p class="review__text">
+                            Разнообразный и богатый опыт консультация с широким активом требуют определения и уточнения
+                            позиций, занимаемых участниками в отношении поставленных задач. Задача организации, в
+                            особенности же начало повседневной работы по формированию позиции требуют определения и
+                            уточнения модели развития.
+                        </p>
+                    </div>
+                    <div class="reviews__slide review swiper-slide">
+                        <div class="review__top">
+                            <picture class="review__picture">
+                                <img src="/assets/img/sections/reviews/default.png" alt="Фото Сергея Иванова"
+                                     class="review__avatar">
+                            </picture>
+                            <div class="review__info">
+                                <p class="review__name">
+                                    Сергей Иванов
+                                </p>
+                                <p class="review__age">
+                                    39 лет
+                                </p>
+                                <p class="review__service">
+                                    Кодирование от алкоголя
+                                </p>
+                            </div>
+                        </div>
+                        <p class="review__text">
+                            С другой стороны новая модель организационной деятельности требуют определения и уточнения
+                            форм развития. Идейные соображения высшего порядка, а также постоянное
+                            информационно-пропагандистское обеспечение нашей деятельности требуют от нас анализа модели
+                            развития.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="reviews__more-link btn more-link">
+                Читать все отзывы
+            </a>
+        </div>
+    </section>
+    <section class="faq section-offset">
+        <div class="faq__container container">
+            <h2 class="faq__title section-title">
+                Вопросы и ответы
+            </h2>
+            <p class="faq__descr section-descr section-descr_center">
+                Часто задаваемые вопросы клиентов наркологической клиники и ответы на них
+            </p>
+            <div class="section-decor">
+                <span class="section-decor-item"></span>
+                <span class="section-decor-item"></span>
+                <span class="section-decor-item"></span>
+                <span class="section-decor-item"></span>
+                <span class="section-decor-item"></span>
+                <span class="section-decor-item"></span>
+            </div>
+            <div class="faq__wrapper">
+                <div class="faq__accor question accor">
+                    <button class="question__title accor-open">
+                        <span class="question__title-text">
+                            Как быстро приедет нарколог на дом?
+                        </span>
+                        <span class="question__title-decor accor-open-decor"></span>
+                    </button>
+                    <div class="question__info accor-full">
+                        <div class="question__info-wrapper accor-full-content">
+                            <p class="question__info-text">
+                                С другой стороны новая модель организационной деятельности требуют определения и
+                                уточнения форм развития. Идейные соображения высшего порядка, а также постоянное
+                                информационно-пропагандистское обеспечение нашей деятельности требуют от нас анализа
+                                модели развития.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq__accor question accor">
+                    <button class="question__title accor-open">
+                        <span class="question__title-text">
+                            Как быстро приедет нарколог на дом?
+                        </span>
+                        <span class="question__title-decor accor-open-decor"></span>
+                    </button>
+                    <div class="question__info accor-full">
+                        <div class="question__info-wrapper accor-full-content">
+                            <p class="question__info-text">
+                                С другой стороны новая модель организационной деятельности требуют определения и
+                                уточнения форм развития. Идейные соображения высшего порядка, а также постоянное
+                                информационно-пропагандистское обеспечение нашей деятельности требуют от нас анализа
+                                модели развития.
+                                С другой стороны новая модель организационной деятельности требуют определения и
+                                уточнения форм развития. Идейные соображения высшего порядка, а также постоянное
+                                информационно-пропагандистское обеспечение нашей деятельности требуют от нас анализа
+                                модели развития.
+                                С другой стороны новая модель организационной деятельности требуют определения и
+                                уточнения форм развития. Идейные соображения высшего порядка, а также постоянное
+                                информационно-пропагандистское обеспечение нашей деятельности требуют от нас анализа
+                                модели развития.
+                                С другой стороны новая модель организационной деятельности требуют определения и
+                                уточнения форм развития. Идейные соображения высшего порядка, а также постоянное
+                                информационно-пропагандистское обеспечение нашей деятельности требуют от нас анализа
+                                модели развития.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq__accor question accor">
+                    <button class="question__title accor-open">
+                        <span class="question__title-text">
+                            Как быстро приедет нарколог на дом?
+                        </span>
+                        <span class="question__title-decor accor-open-decor"></span>
+                    </button>
+                    <div class="question__info accor-full">
+                        <div class="question__info-wrapper accor-full-content">
+                            <p class="question__info-text">
+                                С другой стороны новая модель организационной деятельности требуют определения и
+                                уточнения форм развития. Идейные соображения высшего порядка, а также постоянное
+                                информационно-пропагандистское обеспечение нашей деятельности требуют от нас анализа
+                                модели развития.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq__accor question accor">
+                    <button class="question__title accor-open">
+                        <span class="question__title-text">
+                            Как быстро приедет нарколог на дом?
+                        </span>
+                        <span class="question__title-decor accor-open-decor"></span>
+                    </button>
+                    <div class="question__info accor-full">
+                        <div class="question__info-wrapper accor-full-content">
+                            <p class="question__info-text">
+                                С другой стороны новая модель организационной деятельности требуют определения и
+                                уточнения форм развития. Идейные соображения высшего порядка, а также постоянное
+                                информационно-пропагандистское обеспечение нашей деятельности требуют от нас анализа
+                                модели развития.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq__accor question accor">
+                    <button class="question__title accor-open">
+                        <span class="question__title-text">
+                            Как быстро приедет нарколог на дом?
+                        </span>
+                        <span class="question__title-decor accor-open-decor"></span>
+                    </button>
+                    <div class="question__info accor-full">
+                        <div class="question__info-wrapper accor-full-content">
+                            <p class="question__info-text">
+                                С другой стороны новая модель организационной деятельности требуют определения и
+                                уточнения форм развития. Идейные соображения высшего порядка, а также постоянное
+                                информационно-пропагандистское обеспечение нашей деятельности требуют от нас анализа
+                                модели развития.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq__accor question accor">
+                    <button class="question__title accor-open">
+                        <span class="question__title-text">
+                            Как быстро приедет нарколог на дом?
+                        </span>
+                        <span class="question__title-decor accor-open-decor"></span>
+                    </button>
+                    <div class="question__info accor-full">
+                        <div class="question__info-wrapper accor-full-content">
+                            <p class="question__info-text">
+                                С другой стороны новая модель организационной деятельности требуют определения и
+                                уточнения форм развития. Идейные соображения высшего порядка, а также постоянное
+                                информационно-пропагандистское обеспечение нашей деятельности требуют от нас анализа
+                                модели развития.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="reviews__more-link btn more-link">
+                Читать все вопросы и ответы
+            </a>
+        </div>
+    </section>
+    <section class="callback section-offset">
+        <div class="callback__container container">
+            <h2 class="callback__title section-title section-title_color">
+                Остались вопросы? – мы вам перезвоним!
+            </h2>
+            <p class="callback__descr">
+                Оставьте свой номер в контактной форме, и специалист наркологической клиники вам перезвонит, чтобы
+                ответить на любые вопросы
+            </p>
+            <form action="" method="post" class="callback__form form-callback">
+                <div class="form-callback__wrapper">
+                    <label class="form-callback__label">
+                        <input placeholder="Ваше имя" type="text" name="name"
+                               class="form-callback__input name">
+                    </label>
+                    <label class="form-callback__label">
+                        <input placeholder="Телефон" type="tel" name="phone"
+                               class="form-callback__input phone">
+                    </label>
+                </div>
+                <button type="submit" class="form-callback__submit">
+                    Отправить заявку
+                </button>
+                <p class="form-callback__text">
+                    Нажимая на кнопку «Отправить заявку» вы соглашаетесь с обработкой персональных данных
+                </p>
+            </form>
+        </div>
+    </section>
+    <section class="articles section-offset">
+        <div class="articles__container container">
+            <h2 class="articles__title section-title">
+                Статьи о зависимостях
+            </h2>
+            <p class="articles__descr section-descr section-descr_center">
+                Статьи от врачей нашей наркологической клиники о всех видах зависимостей и способах её лечения
+            </p>
+            <div class="section-decor">
+                <span class="section-decor-item"></span>
+                <span class="section-decor-item"></span>
+                <span class="section-decor-item"></span>
+                <span class="section-decor-item"></span>
+                <span class="section-decor-item"></span>
+                <span class="section-decor-item"></span>
+            </div>
+            <div class="articles__slider swiper">
+                <div class="articles__slider-wrapper swiper-wrapper">
+                    <a href="#" class="articles__slide swiper-slide">
+                        <picture class="articles__slide-picture">
+                            <img src="/assets/img/sections/articles/test.png" alt="Фото Фенибута"
+                                 class="articles__slide-img">
+                        </picture>
+                        <p class="articles__slide-title">
+                            Совместим ли одновременный приём Фенибута и алкоголя?
+                        </p>
+                        <p class="articles__slide-text">
+                            Описание о влиянии на организм, если совмещать приём лекарства Фенибут и алкоголя, какие
+                            возможны последствия.
+                        </p>
+                    </a>
+                    <a href="#" class="articles__slide swiper-slide">
+                        <picture class="articles__slide-picture">
+                            <img src="/assets/img/sections/articles/test.png" alt="Фото Фенибута"
+                                 class="articles__slide-img">
+                        </picture>
+                        <p class="articles__slide-title">
+                            Совместим ли одновременный приём Фенибута и алкоголя?
+                        </p>
+                        <p class="articles__slide-text">
+                            Описание о влиянии на организм, если совмещать приём лекарства Фенибут и алкоголя, какие
+                            возможны последствия.
+                        </p>
+                    </a>
+                    <a href="#" class="articles__slide swiper-slide">
+                        <picture class="articles__slide-picture">
+                            <img src="/assets/img/sections/articles/test.png" alt="Фото Фенибута"
+                                 class="articles__slide-img">
+                        </picture>
+                        <p class="articles__slide-title">
+                            Совместим ли одновременный приём Фенибута и алкоголя?
+                        </p>
+                        <p class="articles__slide-text">
+                            Описание о влиянии на организм, если совмещать приём лекарства Фенибут и алкоголя, какие
+                            возможны последствия.
+                        </p>
+                    </a>
+                    <a href="#" class="articles__slide swiper-slide">
+                        <picture class="articles__slide-picture">
+                            <img src="/assets/img/sections/articles/test.png" alt="Фото Фенибута"
+                                 class="articles__slide-img">
+                        </picture>
+                        <p class="articles__slide-title">
+                            Совместим ли одновременный приём Фенибута и алкоголя?
+                        </p>
+                        <p class="articles__slide-text">
+                            Описание о влиянии на организм, если совмещать приём лекарства Фенибут и алкоголя, какие
+                            возможны последствия.
+                        </p>
+                    </a>
+                    <a href="#" class="articles__slide swiper-slide">
+                        <picture class="articles__slide-picture">
+                            <img src="/assets/img/sections/articles/test.png" alt="Фото Фенибута"
+                                 class="articles__slide-img">
+                        </picture>
+                        <p class="articles__slide-title">
+                            Совместим ли одновременный приём Фенибута и алкоголя?
+                        </p>
+                        <p class="articles__slide-text">
+                            Описание о влиянии на организм, если совмещать приём лекарства Фенибут и алкоголя, какие
+                            возможны последствия.
+                        </p>
+                    </a>
+                    <a href="#" class="articles__slide swiper-slide">
+                        <picture class="articles__slide-picture">
+                            <img src="/assets/img/sections/articles/test.png" alt="Фото Фенибута"
+                                 class="articles__slide-img">
+                        </picture>
+                        <p class="articles__slide-title">
+                            Совместим ли одновременный приём Фенибута и алкоголя?
+                        </p>
+                        <p class="articles__slide-text">
+                            Описание о влиянии на организм, если совмещать приём лекарства Фенибут и алкоголя, какие
+                            возможны последствия.
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <a href="#" class="reviews__more-link btn more-link">
+                Читать все статьи
+            </a>
+        </div>
+    </section>
 </main>
+<footer class="footer">
+    <div class="footer__container container">
+        <div class="footer__content">
+            <div class="footer__callback">
+                <a href="/" class="footer__logo logo">
+                    <picture class="logo__picture">
+                        <img src="/assets/img/logo-white.svg" alt="Логотип клиники Ренессанс" class="logo__img">
+                    </picture>
+                </a>
+                <form action="" class="footer__form form-footer">
+                    <div class="form-footer__wrapper">
+                        <label class="form-footer__label form-callback__label">
+                            <input placeholder="Ваше имя" type="text" name="name"
+                                   class="form-footer__input form-callback__input name">
+                        </label>
+                        <label class="form-footer__label form-callback__label">
+                            <input placeholder="Телефон" type="tel" name="phone"
+                                   class="form-footer__input form-callback__input phone">
+                        </label>
+                    </div>
+                    <button type="submit" class="form-footer__submit form-callback__submit">
+                        Отправить заявку
+                    </button>
+                    <p class="form-callback__text">
+                        Нажимая на кнопку «Отправить заявку» вы соглашаетесь с обработкой персональных данных
+                    </p>
+                </form>
+                <div class="payment">
+                    <p class="payment__title">
+                        Способы оплаты
+                    </p>
+                    <ul class="payment__list">
+                        <li class="payment__item">
+                            <img src="/assets/img/sections/footer/master-card.svg" alt="" class="payment__img">
+                        </li>
+                        <li class="payment__item">
+                            <img src="/assets/img/sections/footer/visa.svg" alt="" class="payment__img">
+                        </li>
+                        <li class="payment__item">
+                            <img src="/assets/img/sections/footer/mir.svg" alt="" class="payment__img">
+                        </li>
+                        <li class="payment__item">
+                            <img src="/assets/img/sections/footer/pay.svg" alt="" class="payment__img">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__services">
+                <p class="footer__services-title footer-title">
+                    Основные услуги
+                </p>
+                <ul class="footer__services-list">
+                    <li class="footer__services-item">
+                        <a href="" class="footer__services-link footer-link">
+                            Алкоголизм
+                        </a>
+                    </li>
+                    <li class="footer__services-item">
+                        <a href="" class="footer__services-link footer-link">
+                            Лечение алкоголизма
+                        </a>
+                    </li>
+                    <li class="footer__services-item">
+                        <a href="" class="footer__services-link footer-link">
+                            Вывод из запоя
+                        </a>
+                    </li>
+                    <li class="footer__services-item">
+                        <a href="" class="footer__services-link footer-link">
+                            Нарколог на дом
+                        </a>
+                    </li>
+                    <li class="footer__services-item">
+                        <a href="" class="footer__services-link footer-link">
+                            Кодирование
+                        </a>
+                    </li>
+                    <li class="footer__services-item">
+                        <a href="" class="footer__services-link footer-link">
+                            Кодирование от алкоголизма
+                        </a>
+                    </li>
+                    <li class="footer__services-item">
+                        <a href="" class="footer__services-link footer-link">
+                            Наркомания
+                        </a>
+                    </li>
+                    <li class="footer__services-item">
+                        <a href="" class="footer__services-link footer-link">
+                            Лечение наркомании
+                        </a>
+                    </li>
+                    <li class="footer__services-item">
+                        <a href="" class="footer__services-link footer-link">
+                            Реабилитация
+                        </a>
+                    </li>
+                    <li class="footer__services-item">
+                        <a href="" class="footer__services-link footer-link">
+                            Реабилитационный центр
+                        </a>
+                    </li>
+                    <li class="footer__services-item">
+                        <a href="" class="footer__services-link footer-link">
+                            Алкоголизм
+                        </a>
+                    </li>
+                    <li class="footer__services-item">
+                        <a href="" class="footer__services-link footer-link">
+                            Лечение алкоголизма
+                        </a>
+                    </li>
+                    <li class="footer__services-item">
+                        <a href="" class="footer__services-link footer-link">
+                            Вывод из запоя
+                        </a>
+                    </li>
+                    <li class="footer__services-item">
+                        <a href="" class="footer__services-link footer-link">
+                            Нарколог на дом
+                        </a>
+                    </li>
+                    <li class="footer__services-item">
+                        <a href="" class="footer__services-link footer-link">
+                            Кодирование
+                        </a>
+                    </li>
+                    <li class="footer__services-item">
+                        <a href="" class="footer__services-link footer-link">
+                            Кодирование от алкоголизма
+                        </a>
+                    </li>
+                    <li class="footer__services-item">
+                        <a href="" class="footer__services-link footer-link">
+                            Алкоголизм
+                        </a>
+                    </li>
+                    <li class="footer__services-item">
+                        <a href="" class="footer__services-link footer-link">
+                            Лечение алкоголизма
+                        </a>
+                    </li>
+                    <li class="footer__services-item">
+                        <a href="" class="footer__services-link footer-link">
+                            Вывод из запоя
+                        </a>
+                    </li>
+                    <li class="footer__services-item">
+                        <a href="" class="footer__services-link footer-link">
+                            Нарколог на дом
+                        </a>
+                    </li>
+                    <li class="footer__services-item">
+                        <a href="" class="footer__services-link footer-link">
+                            Кодирование
+                        </a>
+                    </li>
+                    <li class="footer__services-item">
+                        <a href="" class="footer__services-link footer-link">
+                            Кодирование от алкоголизма
+                        </a>
+                    </li>
+                    <li class="footer__services-item">
+                        <a href="" class="footer__services-link footer-link">
+                            Наркомания
+                        </a>
+                    </li>
+                    <li class="footer__services-item">
+                        <a href="" class="footer__services-link footer-link">
+                            Лечение наркомании
+                        </a>
+                    </li>
+                    <li class="footer__services-item">
+                        <a href="" class="footer__services-link footer-link">
+                            Реабилитация
+                        </a>
+                    </li>
+                    <li class="footer__services-item">
+                        <a href="" class="footer__services-link footer-link">
+                            Реабилитационный центр
+                        </a>
+                    </li>
+                    <li class="footer__services-item">
+                        <a href="" class="footer__services-link footer-link">
+                            Алкоголизм
+                        </a>
+                    </li>
+                    <li class="footer__services-item">
+                        <a href="" class="footer__services-link footer-link">
+                            Лечение алкоголизма
+                        </a>
+                    </li>
+                    <li class="footer__services-item">
+                        <a href="" class="footer__services-link footer-link">
+                            Вывод из запоя
+                        </a>
+                    </li>
+                    <li class="footer__services-item">
+                        <a href="" class="footer__services-link footer-link">
+                            Нарколог на дом
+                        </a>
+                    </li>
+                    <li class="footer__services-item">
+                        <a href="" class="footer__services-link footer-link">
+                            Кодирование
+                        </a>
+                    </li>
+                    <li class="footer__services-item">
+                        <a href="" class="footer__services-link footer-link">
+                            Кодирование от алкоголизма
+                        </a>
+                    </li>
+                </ul>
+                <p class="footer__services-decor">
+                    Действуют мобильные медицинские бригады
+                </p>
+            </div>
+            <div class="footer__about">
+                <p class="footer__about-title footer-title">
+                    О клинике
+                </p>
+                <ul class="footer__about-list">
+                    <li class="footer__about-item">
+                        <a href="" class="footer__about-link footer-link">
+                            Контакты
+                        </a>
+                    </li>
+                    <li class="footer__about-item">
+                        <a href="" class="footer__about-link footer-link">
+                            Лицензии
+                        </a>
+                    </li>
+                    <li class="footer__about-item">
+                        <a href="" class="footer__about-link footer-link">
+                            Отзывы
+                        </a>
+                    </li>
+                    <li class="footer__about-item">
+                        <a href="" class="footer__about-link footer-link">
+                            Врачи
+                        </a>
+                    </li>
+                    <li class="footer__about-item">
+                        <a href="" class="footer__about-link footer-link">
+                            Вопросы и ответы
+                        </a>
+                    </li>
+                    <li class="footer__about-item">
+                        <a href="" class="footer__about-link footer-link">
+                            Методы оплаты
+                        </a>
+                    </li>
+                    <li class="footer__about-item">
+                        <a href="" class="footer__about-link footer-link">
+                            Фотогалерея
+                        </a>
+                    </li>
+                </ul>
+                <ul class="footer__requisites">
+                    <li class="footer__requisites-item">
+                        ООО «Детокс»
+                    </li>
+                    <li class="footer__requisites-item">
+                        ИНН 2312268085
+                    </li>
+                    <li class="footer__requisites-item">
+                        ОГРН 1182375001511
+                    </li>
+                    <li class="footer__requisites-item">
+                        Лицензия: <br>
+                        Л041-01177-91/00561129
+                    </li>
+                </ul>
+                <div class="footer__connection">
+                    <ul class="footer__connection-main">
+                        <li class="footer__connection-item">
+                            <a href="mailto:help@domen.ru" class="footer__connection-link footer-link">
+                                help@domen.ru
+                            </a>
+                        </li>
+                        <li class="footer__connection-item">
+                            <a href="tel:80000000000" class="footer__connection-link footer-link">
+                                +7 (000) 000-00-00
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="footer__socials socials">
+                        <li class="socials__item">
+                            <a href="https://vk.com/" target="_blank" class="socials__link">
+                                <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21.5746 14.114C21.1543 13.5832 21.2745 13.347 21.5746 12.8725C21.58 12.8671 25.0499 8.07224 25.4074 6.44616L25.4096 6.44508C25.5873 5.85249 25.4096 5.41699 24.5505 5.41699H21.7078C20.9842 5.41699 20.6505 5.79074 20.4718 6.20891C20.4718 6.20891 19.0244 9.67341 16.9769 11.9192C16.3161 12.5681 16.0106 12.7761 15.6498 12.7761C15.4722 12.7761 15.1959 12.5681 15.1959 11.9755V6.44508C15.1959 5.73441 14.9933 5.41699 14.3943 5.41699H9.92442C9.4705 5.41699 9.20075 5.74849 9.20075 6.05724C9.20075 6.73108 10.2245 6.88599 10.3307 8.78183V12.8952C10.3307 13.7966 10.1671 13.9623 9.80417 13.9623C8.83783 13.9623 6.49242 10.4837 5.1025 6.50249C4.82192 5.73008 4.54783 5.41808 3.81875 5.41808H0.975C0.163583 5.41808 0 5.79183 0 6.20999C0 6.94883 0.966333 10.6224 4.49367 15.4757C6.8445 18.7886 10.1552 20.5837 13.1668 20.5837C14.9771 20.5837 15.1981 20.185 15.1981 19.4992C15.1981 16.3337 15.0345 16.0347 15.9413 16.0347C16.3616 16.0347 17.0853 16.2427 18.7753 17.8407C20.7068 19.7354 21.0243 20.5837 22.1054 20.5837H24.9481C25.7584 20.5837 26.169 20.185 25.9328 19.3985C25.3923 17.7442 21.7393 14.3415 21.5746 14.114Z"
+                                          fill="white"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="https://web.telegram.org/" target="_blank" class="socials__link">
+                                <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.6326 15.8632L10.2687 20.8888C10.7894 20.8888 11.0149 20.6692 11.2853 20.4055L13.7264 18.115L18.7847 21.7519C19.7124 22.2595 20.366 21.9922 20.6163 20.914L23.9365 5.63926L23.9374 5.63836C24.2317 4.29196 23.4415 3.76547 22.5377 4.09576L3.02135 11.4316C1.68941 11.9392 1.70957 12.6682 2.79493 12.9985L7.78447 14.5222L19.3742 7.40235C19.9196 7.04775 20.4155 7.24395 20.0076 7.59855L10.6326 15.8632Z"
+                                          fill="white"/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__copyright">
+        <div class="footer__copyright-container container">
+            <p class="footer__copyright-text">
+                Все права защищены © 2023 renessans.org.ru
+            </p>
+            <p class="footer__copyright-text">
+                Вся информация на сайте не является публичной офертой, несёт сугубо информационный характер, и не служит
+                для постановки диагноза и назначения лечения
+            </p>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

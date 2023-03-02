@@ -1,3 +1,7 @@
+function getHeight(el) {
+    return el.offsetHeight;
+}
+
 document.addEventListener('DOMContentLoaded', function () {
     // dropdown menu
     const menuBtns = document.querySelectorAll('button.menu__link');
@@ -72,6 +76,70 @@ document.addEventListener('DOMContentLoaded', function () {
     if (specialistsSliderCheck.length > 0) {
         const specialistsSlider = new Swiper('.specialists__slider', {
             spaceBetween: 30,
+            slidesPerView: 3,
+            touchRatio: 0,
+        });
+    }
+
+    // gallery slider
+    const gallerySliderCheck = document.querySelectorAll('.gallery__slider');
+
+    if (gallerySliderCheck.length > 0) {
+        const gallerySlider = new Swiper('.gallery__slider', {
+            spaceBetween: 30,
+            slidesPerView: 3,
+            touchRatio: 0,
+            grid: {
+                rows: 2,
+            },
+        });
+    }
+
+    // reviews slider
+    const reviewsSliderCheck = document.querySelectorAll('.reviews__slider');
+
+    if (reviewsSliderCheck.length > 0) {
+        const reviewsSlider = new Swiper('.reviews__slider', {
+            spaceBetween: 90,
+            slidesPerView: 3,
+            touchRatio: 0,
+        });
+    }
+
+    // accordion
+    const accorOpenBtns = document.querySelectorAll('.accor-open');
+
+    for (let i = 0; i < accorOpenBtns.length; i += 1) {
+        let accorOpenBtn = accorOpenBtns[i];
+
+        accorOpenBtn.addEventListener('click', function () {
+            let accor = accorOpenBtn.closest('.accor');
+            let accorFull = accor.querySelector('.accor-full');
+            let accorFullContent = accor.querySelector('.accor-full-content');
+            let accorFullContentHeight = getHeight(accorFullContent);
+
+            if (accor.classList.contains('active')) {
+                accor.classList.remove('active');
+                accorFull.style.height = '0px';
+            } else {
+                document.querySelectorAll('.accor').forEach(function (el) {
+                    el.classList.remove('active');
+                    el.querySelector('.accor-full').style.height = '0px';
+                });
+                accor.classList.add('active');
+                accorFull.style.height = accorFullContentHeight + 'px';
+            }
+        });
+    }
+
+    accorOpenBtns[0].click();
+
+    // reviews slider
+    const articlesSliderCheck = document.querySelectorAll('.articles__slider');
+
+    if (articlesSliderCheck.length > 0) {
+        const articlesSlider = new Swiper('.articles__slider', {
+            spaceBetween: 60,
             slidesPerView: 3,
             touchRatio: 0,
         });

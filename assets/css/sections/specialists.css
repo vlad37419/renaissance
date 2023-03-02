@@ -57,13 +57,6 @@
     color: #fff;
 }
 
-.specialists__more-link {
-    width: fit-content;
-    margin: 0 auto;
-    padding: 14.5px 38.5px;
-    min-width: 292px;
-}
-
 @media (min-width: 1025px) {
     .specialists__slide:hover .specialists__slide-info {
         background-color: #165E79;

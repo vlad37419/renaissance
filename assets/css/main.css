@@ -133,6 +133,15 @@ body {
     color: #6A777D;
 }
 
+.logo {
+    display: flex;
+    width: max-content;
+}
+
+.logo__picture {
+    display: flex;
+}
+
 .btn {
     display: block;
     padding: 14.5px 33.5px;
@@ -157,6 +166,7 @@ body {
     font-size: 18px;
     line-height: 160%;
     color: #6A777D;
+    margin-bottom: 40px;
 }
 
 .section-descr_center {
@@ -192,7 +202,7 @@ body {
     text-align: center;
     position: relative;
     padding: 0 110px;
-    margin: 0 auto;
+    margin: 0 auto 24px;
     width: fit-content;
 }
 
@@ -245,6 +255,129 @@ body {
     margin-right: 0;
 }
 
+.more-link {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 14.5px 32px;
+    min-width: 292px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.col-33 {
+    flex: 0 1 33.333%;
+    padding: 0 15px;
+}
+
+.accor-full {
+    transition: height .2s ease;
+    height: 0;
+    overflow: hidden;
+}
+
+.accor-open-decor {
+    position: relative;
+    width: 44px;
+    height: 44px;
+}
+
+.accor-open-decor::before,
+.accor-open-decor::after {
+    content: '';
+    background-color: #F04A25;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.accor-open-decor::before {
+    width: 26px;
+    height: 3px;
+}
+
+.accor-open-decor::after {
+    width: 3px;
+    height: 26px;
+    transition: opacity .2s ease;
+}
+
+.accor.active .accor-open-decor::after {
+    opacity: 0;
+}
+
+.form-callback__wrapper {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.form-callback__label {
+    display: flex;
+    margin-right: 25px;
+    flex: 0 1 50%;
+}
+
+.form-callback__label:last-child {
+    margin-right: 0;
+}
+
+.form-callback__input {
+    background-color: #4991AC;
+    border-radius: 10px;
+    padding: 17px 20px 17px 60px;
+    font-size: 16px;
+    line-height: 160%;
+    color: #fff;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 20px center;
+}
+
+.form-callback__input.name {
+    background-image: url("/assets/img/sections/consultation/person.svg");
+}
+
+.form-callback__input.phone {
+    background-image: url("/assets/img/sections/consultation/phone.svg");
+}
+
+.form-callback__input::placeholder {
+    color: rgba(255, 255, 255, .6);
+    opacity: 1;
+}
+
+.form-callback__input::-ms-input-placeholder {
+    color: rgba(255, 255, 255, .6);
+}
+
+.form-callback__input::-ms-input-placeholder {
+    color: rgba(255, 255, 255, .6);
+}
+
+.form-callback__submit {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 160%;
+    text-align: center;
+    color: #F04A25;
+    padding: 16px 20px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    transition: background-color .2s ease, color .2s ease;
+}
+
+.form-callback__text {
+    font-size: 14px;
+    line-height: 160%;
+    color: rgba(255, 255, 255, .6);
+}
+
 @media (min-width: 1025px) {
     .btn:hover {
         background-color: #F04A25;
@@ -258,5 +391,10 @@ body {
 
     .btn-main_color:hover {
         color: #1C7597;
+    }
+
+    .form-callback__submit:hover {
+        background-color: #F04A25;
+        color: #fff;
     }
 }

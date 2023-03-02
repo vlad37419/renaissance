@@ -1,31 +1,23 @@
-.documents__title {
-    margin-bottom: 24px;
-}
-
-.documents__descr {
-    margin-bottom: 40px;
-}
-
-.documents__slider {
+.gallery__slider {
+    height: 710px;
     margin-bottom: 70px;
 }
 
-.documents__more-link {
-    width: fit-content;
-    margin: 0 auto;
-    padding: 14.5px 38.5px;
-    min-width: 292px;
+.gallery__slide {
+    height: calc((100% - 30px) / 2);
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
 }
 
-.documents__slide::after {
+.gallery__slide::after {
     content: '';
-    background-color: rgba(7, 29, 38, .6);
-    border-radius: 10px;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    background-color: rgba(7, 29, 38, .6);
     background-image: url("/assets/img/zoom-icon.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -33,8 +25,13 @@
     transition: opacity .2s ease;
 }
 
+.gallery__slide-img {
+    object-fit: cover;
+    object-position: center;
+}
+
 @media (min-width: 1025px) {
-    .documents__slide:hover::after {
+    .gallery__slide:hover::after {
         opacity: 1;
     }
 }

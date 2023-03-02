@@ -1,0 +1,70 @@
+.promotions__cards {
+    margin-bottom: 70px;
+}
+
+.promotions__card-wrapper {
+    padding: 40px 160px 40px 40px;
+    border-radius: 10px;
+    background-color: #1C7597;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: background-color .2s ease;
+}
+
+.promotions__card-decor {
+    position: absolute;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+    transition: opacity .2s ease;
+}
+
+.promotions__card-sticker {
+    background-color: #4991AC;
+    border-radius: 10px;
+    padding: 5px 15px;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 160%;
+    color: #fff;
+    margin-bottom: 40px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.promotions__card-name {
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 160%;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.promotions__card-discount {
+    background-color: #fff;
+    border-radius: 100px;
+    padding: 5px 15px;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 160%;
+    text-align: center;
+    color: #F04A25;
+}
+
+.promotions__card-presentation {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+@media (min-width: 1025px) {
+    .promotions__card-wrapper:hover {
+        background-color: #165E79;
+    }
+
+    .promotions__card-wrapper:hover .promotions__card-decor {
+        opacity: 0;
+    }
+}
