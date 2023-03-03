@@ -58,3 +58,108 @@
     font-size: 18px;
     line-height: 160%;
 }
+
+@media (max-width: 1400px) {
+    .prices__table-column {
+        flex: 0 1 33.333%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .prices__table-btn {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .prices__table-column {
+        margin-right: 16px;
+    }
+}
+
+@media (max-width: 991px) {
+    .prices__table {
+        margin-bottom: 30px;
+    }
+
+    .prices__table-head {
+        padding: 10px 15px;
+    }
+
+    .prices__table-row {
+        padding: 20px 15px;
+    }
+
+    .prices__table-row {
+        flex-wrap: wrap;
+    }
+
+    .prices__table-row .prices__table-column:nth-child(1) {
+        flex: 1 1 100%;
+        margin-bottom: 10px;
+    }
+
+    .prices__table-row .prices__table-column:nth-child(2),
+    .prices__table-row .prices__table-column:nth-child(3) {
+        flex: 0 1 50%;
+    }
+
+    .prices__table-head .prices__table-column {
+        flex: 1 1 100%;
+    }
+
+    .prices__table-head .prices__table-column:nth-child(2),
+    .prices__table-head .prices__table-column:nth-child(3) {
+        display: none;
+    }
+
+    .prices__table-column {
+        margin-right: 0;
+    }
+
+    .prices__table-btn {
+        background-color: transparent;
+        color: #F04A25;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 140%;
+        padding: 0 20px 0 0;
+        border: none;
+        width: auto;
+        background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.791 10.9867C12.791 11.0796 12.7745 11.1665 12.7416 11.2474C12.7087 11.3283 12.6544 11.4069 12.5786 11.4834L8.45358 15.6084C8.32503 15.7361 8.15643 15.7965 7.94776 15.7895C7.73908 15.7826 7.57006 15.7153 7.44068 15.5875C7.28353 15.432 7.21537 15.2628 7.2362 15.0798C7.25704 14.8969 7.33131 14.7346 7.45901 14.593L11.0659 10.9861L7.45901 7.37921C7.33131 7.24982 7.26051 7.08017 7.24662 6.87026C7.23273 6.66034 7.30424 6.49152 7.46116 6.3638C7.5903 6.20831 7.75606 6.14098 7.95843 6.16182C8.16082 6.18265 8.33281 6.25692 8.47441 6.38463L12.5786 10.4888C12.6544 10.5654 12.7087 10.6443 12.7416 10.7255C12.7745 10.8067 12.791 10.8937 12.791 10.9867Z' fill='%23F04A25'/%3E%3C/svg%3E%0A");
+        background-repeat: no-repeat;
+        background-position: right center;
+    }
+
+    .prices__table-text {
+        font-size: 14px;
+        line-height: 140%;
+    }
+
+    .prices__table-text_name {
+        font-size: 16px;
+    }
+
+    .prices__container {
+        padding: 0;
+    }
+
+    .prices__table-head,
+    .prices__table-row {
+        border-radius: 0;
+    }
+
+    .prices__title {
+        margin: 0 15px 51px;
+    }
+
+    .prices__descr {
+        margin: 0 15px 30px;
+    }
+}
+
+@media (max-width: 575px) {
+    .prices__more-link {
+        margin: 0 15px;
+        width: initial!important;
+    }
+}

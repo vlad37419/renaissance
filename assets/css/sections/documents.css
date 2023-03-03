@@ -1,12 +1,4 @@
-.documents__title {
-    margin-bottom: 24px;
-}
-
-.documents__descr {
-    margin-bottom: 40px;
-}
-
-.documents__slider {
+.documents__wrapper {
     margin-bottom: 70px;
 }
 
@@ -33,8 +25,23 @@
     transition: opacity .2s ease;
 }
 
+.documents__slide-img {
+    width: 100%;
+    object-fit: cover;
+}
+
 @media (min-width: 1025px) {
     .documents__slide:hover::after {
         opacity: 1;
+    }
+}
+
+@media (max-width: 1024px) {
+    .documents__wrapper {
+        margin-bottom: 30px;
+    }
+
+    .documents__slider {
+        margin-bottom: 25px;
     }
 }

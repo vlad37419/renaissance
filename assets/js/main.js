@@ -5,7 +5,6 @@ function getHeight(el) {
 document.addEventListener('DOMContentLoaded', function () {
     const body = document.querySelector('.body');
 
-
     // dropdown menu
     const menuBtns = document.querySelectorAll('button.menu__link');
     const menuSubBtns = document.querySelectorAll('button.menu__sub-link');
@@ -70,6 +69,33 @@ document.addEventListener('DOMContentLoaded', function () {
             spaceBetween: 30,
             slidesPerView: 4,
             touchRatio: 0,
+            breakpoints: {
+                0: {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                    touchRatio: 1,
+                },
+                767: {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                    touchRatio: 1,
+                },
+                1025: {
+                    slidesPerView: 4,
+                    spaceBetween: 10,
+                    touchRatio: 0,
+                },
+                1400: {
+                    spaceBetween: 30,
+                    slidesPerView: 4,
+                    touchRatio: 0,
+                },
+            },
+            pagination: {
+                el: '.documents__slider-pagination',
+                type: 'bullets',
+                clickable: true,
+            },
         });
     }
 
@@ -81,6 +107,39 @@ document.addEventListener('DOMContentLoaded', function () {
             spaceBetween: 30,
             slidesPerView: 3,
             touchRatio: 0,
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                    touchRatio: 1,
+                },
+
+                575: {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                    touchRatio: 1,
+                },
+                767: {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                    touchRatio: 1,
+                },
+                1025: {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                    touchRatio: 0,
+                },
+                1400: {
+                    spaceBetween: 30,
+                    slidesPerView: 3,
+                    touchRatio: 0,
+                },
+            },
+            pagination: {
+                el: '.specialists__slider-pagination',
+                type: 'bullets',
+                clickable: true,
+            },
         });
     }
 
@@ -95,6 +154,54 @@ document.addEventListener('DOMContentLoaded', function () {
             grid: {
                 rows: 2,
             },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                    touchRatio: 1,
+                    grid: {
+                        rows: 1,
+                    },
+                },
+
+                575: {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                    touchRatio: 1,
+                    grid: {
+                        rows: 1,
+                    },
+                },
+                767: {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                    touchRatio: 1,
+                    grid: {
+                        rows: 1,
+                    },
+                },
+                1025: {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                    touchRatio: 0,
+                    grid: {
+                        rows: 2,
+                    },
+                },
+                1400: {
+                    spaceBetween: 30,
+                    slidesPerView: 3,
+                    touchRatio: 0,
+                    grid: {
+                        rows: 2,
+                    },
+                },
+            },
+            pagination: {
+                el: '.gallery__slider-pagination',
+                type: 'bullets',
+                clickable: true,
+            },
         });
     }
 
@@ -106,16 +213,50 @@ document.addEventListener('DOMContentLoaded', function () {
             spaceBetween: 90,
             slidesPerView: 3,
             touchRatio: 0,
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                    touchRatio: 1,
+                    autoHeight: true,
+                },
+
+                575: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                    touchRatio: 1,
+                },
+                767: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                    touchRatio: 1,
+                },
+                1025: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                    touchRatio: 0,
+                },
+                1400: {
+                    spaceBetween: 90,
+                    slidesPerView: 3,
+                    touchRatio: 0,
+                },
+            },
+            pagination: {
+                el: '.reviews__slider-pagination',
+                type: 'bullets',
+                clickable: true,
+            },
         });
     }
 
     // accordion
-    const ACCORDION_LIST          = 'data-accordion-list'
-    const ACCORDION_BUTTON        = 'data-accordion-button'
-    const ACCORDION_ARROW         = 'data-accordion-arrow'
-    const ACCORDION_CONTENT       = 'data-accordion-content'
-    const SECTION_OPENED          = 'active'
-    const ICON_ROTATED            = 'rotated'
+    const ACCORDION_LIST = 'data-accordion-list'
+    const ACCORDION_BUTTON = 'data-accordion-button'
+    const ACCORDION_ARROW = 'data-accordion-arrow'
+    const ACCORDION_CONTENT = 'data-accordion-content'
+    const SECTION_OPENED = 'active'
+    const ICON_ROTATED = 'rotated'
 
     class Accordion {
         static apply(accordionNode) {
@@ -195,12 +336,13 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    Accordion.apply(document.querySelector(`[${ACCORDION_LIST}`))
+    // Accordion.apply(document.querySelector(`[${ACCORDION_LIST}`));
 
     const accorWrapperList = document.querySelectorAll('.accor-wrapper');
 
     if (accorWrapperList.length > 0) {
         accorWrapperList.forEach(function (elem) {
+            Accordion.apply(elem);
             elem.querySelector('.accor-open').click();
         });
     }
@@ -225,4 +367,92 @@ document.addEventListener('DOMContentLoaded', function () {
         headerMenu.classList.toggle('active');
         body.classList.toggle('lock');
     });
+
+    // more text
+    let windowWidth = document.body.clientWidth;
+    const moreBtnsList = document.querySelectorAll('.more-text-btn');
+    const moreTextList = document.querySelectorAll('.more-text');
+
+    if (windowWidth <= 575) {
+        if (moreTextList.length > 0) {
+            moreTextList.forEach(function (moreText) {
+                const textWrapper = moreText.querySelector('.more-text-wrapper');
+                const textContent = moreText.querySelector('.more-text-content');
+                const heightTextContent = getHeight(textContent);
+                const btnMore = moreText.querySelector('.more-text-btn');
+
+                if (heightTextContent <= 140) {
+                    btnMore.style.display = 'none';
+                    textWrapper.style.height = 'auto';
+                } else {
+                    btnMore.style.display = 'flex';
+                    textWrapper.style.height = 140 + 'px';
+                    btnMore.textContent = 'Показать полностью';
+                }
+            });
+        }
+    } else {
+        if (moreTextList.length > 0) {
+            moreTextList.forEach(function (moreText) {
+                const textWrapper = moreText.querySelector('.more-text-wrapper');
+                const btnMore = moreText.querySelector('.more-text-btn');
+
+                btnMore.style.display = 'none';
+                textWrapper.style.height = 'auto';
+            });
+        }
+    }
+
+    window.addEventListener('resize', () => {
+        if (windowWidth != document.body.clientWidth) {
+            if (document.body.clientWidth <= 575) {
+                if (moreTextList.length > 0) {
+                    moreTextList.forEach(function (moreText) {
+                        const textWrapper = moreText.querySelector('.more-text-wrapper');
+                        const textContent = moreText.querySelector('.more-text-content');
+                        const heightTextContent = getHeight(textContent);
+                        const btnMore = moreText.querySelector('.more-text-btn');
+
+                        if (heightTextContent <= 140) {
+                            btnMore.style.display = 'none';
+                            textWrapper.style.height = 'auto';
+                        } else {
+                            btnMore.style.display = 'flex';
+                            textWrapper.style.height = 140 + 'px';
+                            btnMore.textContent = 'Показать полностью';
+                        }
+                    });
+                }
+            } else {
+                if (moreTextList.length > 0) {
+                    moreTextList.forEach(function (moreText) {
+                        const textWrapper = moreText.querySelector('.more-text-wrapper');
+                        const btnMore = moreText.querySelector('.more-text-btn');
+
+                        btnMore.style.display = 'none';
+                        textWrapper.style.height = 'auto';
+                    });
+                }
+            }
+            windowWidth = document.body.clientWidth;
+        }
+    });
+
+    if (moreBtnsList.length > 0) {
+        moreBtnsList.forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                const textWrapper = btn.closest('.more-text').querySelector('.more-text-wrapper');
+                const textContent = btn.closest('.more-text').querySelector('.more-text-content');
+                const heightTextWrapper = getHeight(textWrapper);
+                const heightTextContent = getHeight(textContent);
+                if (heightTextContent > heightTextWrapper) {
+                    textWrapper.style.height = heightTextContent + 'px';
+                    btn.textContent = 'Скрыть';
+                } else {
+                    textWrapper.style.height = 140 + 'px';
+                    btn.textContent = 'Показать полностью';
+                }
+            });
+        })
+    }
 });

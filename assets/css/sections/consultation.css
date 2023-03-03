@@ -33,3 +33,58 @@
     color: #fff;
     margin-bottom: 50px;
 }
+
+@media (max-width: 1600px) {
+    .consultation__picture {
+        margin-right: 24px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .consultation__picture {
+        min-width: 380px;
+        max-width: 380px;
+    }
+
+    .consultation__title {
+        font-size: 30px;
+        line-height: 140%;
+    }
+
+    .consultation__wrapper {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 991px) {
+    .consultation__wrapper {
+        display: block;
+        padding: 15px;
+    }
+
+    .consultation__picture {
+        min-width: 0;
+        max-width: none;
+        margin-right: 0;
+        margin-bottom: 32px;
+        max-height: 460px;
+    }
+
+    .consultation__title {
+        font-size: 22px;
+        line-height: 140%;
+        margin-bottom: 20px;
+    }
+
+    .consultation__descr {
+        font-size: 14px;
+        line-height: 140%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 575px) {
+    .consultation__container {
+        padding: 0;
+    }
+}

@@ -1,16 +1,27 @@
 .promotions__cards {
-    margin-bottom: 70px;
+    margin-bottom: 40px;
+}
+
+.promotions__card {
+    min-height: 331px;
 }
 
 .promotions__card-wrapper {
-    padding: 40px 160px 40px 40px;
+    padding: 40px;
     border-radius: 10px;
     background-color: #1C7597;
     position: relative;
     display: flex;
+    transition: background-color .2s ease;
+    height: 100%;
+}
+
+.promotions__card-content {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
-    transition: background-color .2s ease;
+    position: relative;
+    z-index: 10;
 }
 
 .promotions__card-decor {
@@ -40,6 +51,9 @@
     line-height: 160%;
     margin-bottom: 40px;
     color: #fff;
+    flex-grow: 1;
+    word-wrap: break-word;
+    width: calc(100% - 80px);
 }
 
 .promotions__card-discount {
@@ -66,5 +80,63 @@
 
     .promotions__card-wrapper:hover .promotions__card-decor {
         opacity: 0;
+    }
+}
+
+@media (max-width: 1600px) {
+    .promotions__card-wrapper {
+        padding: 20px;
+    }
+
+    .promotions__card-name {
+        width: calc(100% - 100px);
+    }
+}
+
+@media (max-width: 1400px) {
+    .promotions__cards {
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .promotions__card-name {
+        width: 100%;
+        font-size: 20px;
+        line-height: 140%;
+        margin-bottom: 20px;
+    }
+
+    .promotions__card-presentation {
+        height: 193px;
+    }
+
+    .promotions__card {
+        min-height: 193px;
+    }
+
+    .promotions__card-sticker {
+        font-size: 11px;
+        line-height: 140%;
+        margin-bottom: 20px;
+        padding: 5px 10px;
+    }
+
+    .promotions__card-discount {
+        font-size: 14px;
+        line-height: 140%;
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 991px) {
+    .promotions__cards {
+        margin-bottom: 22px;
+    }
+}
+
+@media (max-width: 575px) {
+    .promotions__card-name {
+        max-width: 180px;
     }
 }

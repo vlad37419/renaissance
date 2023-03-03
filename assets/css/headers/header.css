@@ -70,6 +70,10 @@
     transform: translateY(-50%);
 }
 
+.header {
+    min-width: 320px;
+}
+
 .header__top {
     padding: 30px 0;
 }
