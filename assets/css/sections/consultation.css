@@ -5,10 +5,14 @@
     background-repeat: no-repeat;
     background-position: center;
     padding: 90px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .consultation__picture {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     min-width: 520px;
     max-width: 520px;
@@ -18,7 +22,9 @@
 }
 
 .consultation__img {
+    -o-object-fit: cover;
     object-fit: cover;
+    -o-object-position: top;
     object-position: top;
 }
 

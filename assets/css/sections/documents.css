@@ -3,6 +3,8 @@
 }
 
 .documents__more-link {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     margin: 0 auto;
     padding: 14.5px 38.5px;
@@ -22,11 +24,14 @@
     background-repeat: no-repeat;
     background-position: center;
     opacity: 0;
+    -webkit-transition: opacity .2s ease;
+    -o-transition: opacity .2s ease;
     transition: opacity .2s ease;
 }
 
 .documents__slide-img {
     width: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
 }
 

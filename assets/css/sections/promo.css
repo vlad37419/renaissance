@@ -1,9 +1,22 @@
-.promo_padding {
+.promo {
+    padding-top: 35px;
+    padding-bottom: 100px;
+}
+
+.promo_main {
     padding-top: 46px;
+    padding-bottom: 0;
 }
 
 .promo__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+}
+
+.promo_main .promo__container {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -14,17 +27,30 @@
     margin-right: 90px;
 }
 
+.promo__img {
+    object-fit: cover;
+    object-position: center;
+}
+
 .promo__badge {
     position: absolute;
     bottom: 0;
     left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     background-color: #1C7597;
     border-radius: 100px 100px 0 0;
     padding: 7px 20px;
     width: 100%;
+    -webkit-transition: background-color .2s ease;
+    -o-transition: background-color .2s ease;
     transition: background-color .2s ease;
 }
 
@@ -60,7 +86,16 @@
     margin-bottom: 50px;
 }
 
+.promo__sub-descr-link {
+    font-weight: 800;
+    color: #F04A25;
+    text-decoration: underline;
+    white-space: nowrap;
+}
+
 .promo__btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -73,7 +108,10 @@
 }
 
 .promo__picture {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    border-radius: 10px;
 }
 
 @media (min-width: 1025px) {
@@ -97,6 +135,9 @@
 
 @media (max-width: 1200px) {
     .promo__btns {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
@@ -123,8 +164,14 @@
 }
 
 @media (max-width: 991px) {
-    .promo_padding {
+    .promo {
+        padding-top: 15px;
+        padding-bottom: 40px;
+    }
+
+    .promo_main {
         padding-top: 30px;
+        padding-bottom: 0;
     }
 
     .promo__img-wrapper {
@@ -152,21 +199,49 @@
 
 @media (max-width: 767px) {
     .promo__img-wrapper {
+        margin-bottom: 30px;
+    }
+
+    .promo_main .promo__img-wrapper {
+        margin-bottom: 0;
+    }
+
+    .promo__img-wrapper {
         margin-right: 0;
         min-width: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
 
     .promo__container {
+        flex-direction: column;
+        align-items: initial;
+    }
+
+    .promo_main .promo__container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
         flex-direction: column-reverse;
+        -webkit-box-align: initial;
+        -ms-flex-align: initial;
         align-items: initial;
     }
 
     .promo__content {
-        margin-bottom: 30px;
         padding: 0 15px;
+    }
+
+    .promo_main .promo__content {
+        margin-bottom: 30px;
     }
 
     .promo__badge {

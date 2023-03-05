@@ -26,3 +26,28 @@
 .callback__form .form-callback__text {
     text-align: center;
 }
+
+@media (max-width: 991px) {
+    .callback {
+        padding: 50px 0 35px;
+    }
+
+    .callback__title {
+        margin-bottom: 20px;
+    }
+
+    .callback__descr {
+        text-align: left;
+        margin-bottom: 30px;
+        font-size: 14px;
+        line-height: 140%;
+    }
+
+    .callback__form {
+        max-width: none;
+    }
+
+    .callback__form .form-callback__text {
+        text-align: left;
+    }
+}

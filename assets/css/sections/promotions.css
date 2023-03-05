@@ -11,14 +11,25 @@
     border-radius: 10px;
     background-color: #1C7597;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-transition: background-color .2s ease;
+    -o-transition: background-color .2s ease;
     transition: background-color .2s ease;
     height: 100%;
 }
 
 .promotions__card-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
     position: relative;
     z-index: 10;
@@ -29,6 +40,8 @@
     top: 0;
     right: 0;
     pointer-events: none;
+    -webkit-transition: opacity .2s ease;
+    -o-transition: opacity .2s ease;
     transition: opacity .2s ease;
 }
 
@@ -51,6 +64,8 @@
     line-height: 160%;
     margin-bottom: 40px;
     color: #fff;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
     flex-grow: 1;
     word-wrap: break-word;
     width: calc(100% - 80px);

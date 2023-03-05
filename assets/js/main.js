@@ -347,7 +347,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // reviews slider
+    // articles slider
     const articlesSliderCheck = document.querySelectorAll('.articles__slider');
 
     if (articlesSliderCheck.length > 0) {
@@ -355,6 +355,40 @@ document.addEventListener('DOMContentLoaded', function () {
             spaceBetween: 60,
             slidesPerView: 3,
             touchRatio: 0,
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                    touchRatio: 1,
+                    autoHeight: true,
+                },
+
+                575: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                    touchRatio: 1,
+                },
+                767: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                    touchRatio: 1,
+                },
+                1025: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                    touchRatio: 0,
+                },
+                1400: {
+                    spaceBetween: 60,
+                    slidesPerView: 3,
+                    touchRatio: 0,
+                },
+            },
+            pagination: {
+                el: '.articles__slider-pagination',
+                type: 'bullets',
+                clickable: true,
+            },
         });
     }
 

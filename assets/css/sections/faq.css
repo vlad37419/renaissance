@@ -6,6 +6,8 @@
     background-color: #F3F4F4;
     border-radius: 10px;
     margin-bottom: 9px;
+    -webkit-transition: background-color .2s ease;
+    -o-transition: background-color .2s ease;
     transition: background-color .2s ease;
 }
 
@@ -15,8 +17,14 @@
 
 .question__title {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 23px 30px;
 }
@@ -83,7 +91,7 @@
 
     .faq__accor {
         border-radius: 0;
-        margin-bottom: 5px;
+        margin-bottom: 6px;
     }
 
     .faq__container {
