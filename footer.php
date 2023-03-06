@@ -35,16 +35,16 @@
                     </p>
                     <ul class="payment__list">
                         <li class="payment__item">
-                            <img src="/assets/img/sections/footer/master-card.svg" alt="" class="payment__img">
+                            <img src="/assets/img/footers/master-card.svg" alt="" class="payment__img">
                         </li>
                         <li class="payment__item">
-                            <img src="/assets/img/sections/footer/visa.svg" alt="" class="payment__img">
+                            <img src="/assets/img/footers/visa.svg" alt="" class="payment__img">
                         </li>
                         <li class="payment__item">
-                            <img src="/assets/img/sections/footer/mir.svg" alt="" class="payment__img">
+                            <img src="/assets/img/footers/mir.svg" alt="" class="payment__img">
                         </li>
                         <li class="payment__item">
-                            <img src="/assets/img/sections/footer/pay.svg" alt="" class="payment__img">
+                            <img src="/assets/img/footers/pay.svg" alt="" class="payment__img">
                         </li>
                     </ul>
                 </div>

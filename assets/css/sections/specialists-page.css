@@ -1,0 +1,25 @@
+.specialists-page {
+    margin-bottom: 120px;
+}
+
+.specialists-page__title {
+    margin-bottom: 60px;
+}
+
+.specialists-page__descr {
+    margin-bottom: 60px;
+}
+
+@media (max-width: 991px) {
+    .specialists-page {
+        margin-bottom: 60px;
+    }
+
+    .specialists-page__title {
+        margin-bottom: 30px;
+    }
+
+    .specialists-page__descr {
+        margin-bottom: 30px;
+    }
+}

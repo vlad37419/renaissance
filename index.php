@@ -417,44 +417,44 @@
                 <div class="documents__slider swiper">
                     <div class="documents__slider-wrapper swiper-wrapper">
                         <a href="/assets/img/sections/documents/document.png" data-fancybox="documents"
-                           class="documents__slide swiper-slide">
+                           class="documents__slide document swiper-slide">
                             <img src="/assets/img/sections/documents/document.png" alt="Лицензия"
-                                 class="documents__slide-img">
+                                 class="document__img">
                         </a>
                         <a href="/assets/img/sections/documents/document.png" data-fancybox="documents"
-                           class="documents__slide swiper-slide">
+                           class="documents__slide document swiper-slide">
                             <img src="/assets/img/sections/documents/document.png" alt="Лицензия"
-                                 class="documents__slide-img">
+                                 class="document__img">
                         </a>
                         <a href="/assets/img/sections/documents/document.png" data-fancybox="documents"
-                           class="documents__slide swiper-slide">
+                           class="documents__slide document swiper-slide">
                             <img src="/assets/img/sections/documents/document.png" alt="Лицензия"
-                                 class="documents__slide-img">
+                                 class="document__img">
                         </a>
                         <a href="/assets/img/sections/documents/document.png" data-fancybox="documents"
-                           class="documents__slide swiper-slide">
+                           class="documents__slide document swiper-slide">
                             <img src="/assets/img/sections/documents/document.png" alt="Лицензия"
-                                 class="documents__slide-img">
+                                 class="document__img">
                         </a>
                         <a href="/assets/img/sections/documents/document.png" data-fancybox="documents"
-                           class="documents__slide swiper-slide">
+                           class="documents__slide document swiper-slide">
                             <img src="/assets/img/sections/documents/document.png" alt="Лицензия"
-                                 class="documents__slide-img">
+                                 class="document__img">
                         </a>
                         <a href="/assets/img/sections/documents/document.png" data-fancybox="documents"
-                           class="documents__slide swiper-slide">
+                           class="documents__slide document swiper-slide">
                             <img src="/assets/img/sections/documents/document.png" alt="Лицензия"
-                                 class="documents__slide-img">
+                                 class="document__img">
                         </a>
                         <a href="/assets/img/sections/documents/document.png" data-fancybox="documents"
-                           class="documents__slide swiper-slide">
+                           class="documents__slide document swiper-slide">
                             <img src="/assets/img/sections/documents/document.png" alt="Лицензия"
-                                 class="documents__slide-img">
+                                 class="document__img">
                         </a>
                         <a href="/assets/img/sections/documents/document.png" data-fancybox="documents"
-                           class="documents__slide swiper-slide">
+                           class="documents__slide document swiper-slide">
                             <img src="/assets/img/sections/documents/document.png" alt="Лицензия"
-                                 class="documents__slide-img">
+                                 class="document__img">
                         </a>
                     </div>
                 </div>
@@ -484,115 +484,115 @@
             <div class="specialists__wrapper">
                 <div class="specialists__slider swiper">
                     <div class="specialists__slider-wrapper swiper-wrapper">
-                        <a href="#" class="specialists__slide swiper-slide">
-                            <picture class="specialists__slide-picture">
+                        <a href="#" class="specialists__slide specialist swiper-slide">
+                            <picture class="specialist__picture">
                                 <img src="/assets/img/sections/specialists/specialist-1.png" alt="Доктор с компьютером"
-                                     class="specialists__slide-img">
+                                     class="specialist__img">
                             </picture>
-                            <div class="specialists__slide-info">
+                            <div class="specialist__info">
                                 <img src="/assets/img/sections/specialists/card-decor.svg" alt=""
                                      aria-label="presentation"
-                                     class="specialists__slider-decor">
-                                <div class="specialists__slide-content">
-                                    <p class="specialists__slide-name">
+                                     class="specialist__decor">
+                                <div class="specialist__content">
+                                    <p class="specialist__name">
                                         Шилов Глеб Леонидович
                                     </p>
-                                    <p class="specialists__slide-role">
+                                    <p class="specialist__role">
                                         Главный врач клиники
                                     </p>
                                 </div>
                             </div>
                         </a>
-                        <a href="#" class="specialists__slide swiper-slide">
-                            <picture class="specialists__slide-picture">
+                        <a href="#" class="specialists__slide specialist swiper-slide">
+                            <picture class="specialist__picture">
                                 <img src="/assets/img/sections/specialists/specialist-1.png" alt="Доктор с компьютером"
-                                     class="specialists__slide-img">
+                                     class="specialist__img">
                             </picture>
-                            <div class="specialists__slide-info">
+                            <div class="specialist__info">
                                 <img src="/assets/img/sections/specialists/card-decor.svg" alt=""
                                      aria-label="presentation"
-                                     class="specialists__slider-decor">
-                                <div class="specialists__slide-content">
-                                    <p class="specialists__slide-name">
+                                     class="specialist__decor">
+                                <div class="specialist__content">
+                                    <p class="specialist__name">
                                         Шилов Глеб Леонидович
                                     </p>
-                                    <p class="specialists__slide-role">
+                                    <p class="specialist__role">
                                         Главный врач клиники
                                     </p>
                                 </div>
                             </div>
                         </a>
-                        <a href="#" class="specialists__slide swiper-slide">
-                            <picture class="specialists__slide-picture">
+                        <a href="#" class="specialists__slide specialist swiper-slide">
+                            <picture class="specialist__picture">
                                 <img src="/assets/img/sections/specialists/specialist-1.png" alt="Доктор с компьютером"
-                                     class="specialists__slide-img">
+                                     class="specialist__img">
                             </picture>
-                            <div class="specialists__slide-info">
+                            <div class="specialist__info">
                                 <img src="/assets/img/sections/specialists/card-decor.svg" alt=""
                                      aria-label="presentation"
-                                     class="specialists__slider-decor">
-                                <div class="specialists__slide-content">
-                                    <p class="specialists__slide-name">
+                                     class="specialist__decor">
+                                <div class="specialist__content">
+                                    <p class="specialist__name">
                                         Шилов Глеб Леонидович
                                     </p>
-                                    <p class="specialists__slide-role">
+                                    <p class="specialist__role">
                                         Главный врач клиники
                                     </p>
                                 </div>
                             </div>
                         </a>
-                        <a href="#" class="specialists__slide swiper-slide">
-                            <picture class="specialists__slide-picture">
+                        <a href="#" class="specialists__slide specialist swiper-slide">
+                            <picture class="specialist__picture">
                                 <img src="/assets/img/sections/specialists/specialist-1.png" alt="Доктор с компьютером"
-                                     class="specialists__slide-img">
+                                     class="specialist__img">
                             </picture>
-                            <div class="specialists__slide-info">
+                            <div class="specialist__info">
                                 <img src="/assets/img/sections/specialists/card-decor.svg" alt=""
                                      aria-label="presentation"
-                                     class="specialists__slider-decor">
-                                <div class="specialists__slide-content">
-                                    <p class="specialists__slide-name">
+                                     class="specialist__decor">
+                                <div class="specialist__content">
+                                    <p class="specialist__name">
                                         Шилов Глеб Леонидович
                                     </p>
-                                    <p class="specialists__slide-role">
+                                    <p class="specialist__role">
                                         Главный врач клиники
                                     </p>
                                 </div>
                             </div>
                         </a>
-                        <a href="#" class="specialists__slide swiper-slide">
-                            <picture class="specialists__slide-picture">
+                        <a href="#" class="specialists__slide specialist swiper-slide">
+                            <picture class="specialist__picture">
                                 <img src="/assets/img/sections/specialists/specialist-1.png" alt="Доктор с компьютером"
-                                     class="specialists__slide-img">
+                                     class="specialist__img">
                             </picture>
-                            <div class="specialists__slide-info">
+                            <div class="specialist__info">
                                 <img src="/assets/img/sections/specialists/card-decor.svg" alt=""
                                      aria-label="presentation"
-                                     class="specialists__slider-decor">
-                                <div class="specialists__slide-content">
-                                    <p class="specialists__slide-name">
+                                     class="specialist__decor">
+                                <div class="specialist__content">
+                                    <p class="specialist__name">
                                         Шилов Глеб Леонидович
                                     </p>
-                                    <p class="specialists__slide-role">
+                                    <p class="specialist__role">
                                         Главный врач клиники
                                     </p>
                                 </div>
                             </div>
                         </a>
-                        <a href="#" class="specialists__slide swiper-slide">
-                            <picture class="specialists__slide-picture">
+                        <a href="#" class="specialists__slide specialist swiper-slide">
+                            <picture class="specialist__picture">
                                 <img src="/assets/img/sections/specialists/specialist-1.png" alt="Доктор с компьютером"
-                                     class="specialists__slide-img">
+                                     class="specialist__img">
                             </picture>
-                            <div class="specialists__slide-info">
+                            <div class="specialist__info">
                                 <img src="/assets/img/sections/specialists/card-decor.svg" alt=""
                                      aria-label="presentation"
-                                     class="specialists__slider-decor">
-                                <div class="specialists__slide-content">
-                                    <p class="specialists__slide-name">
+                                     class="specialist__decor">
+                                <div class="specialist__content">
+                                    <p class="specialist__name">
                                         Шилов Глеб Леонидович
                                     </p>
-                                    <p class="specialists__slide-role">
+                                    <p class="specialist__role">
                                         Главный врач клиники
                                     </p>
                                 </div>

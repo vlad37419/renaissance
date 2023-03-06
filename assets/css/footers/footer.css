@@ -205,6 +205,9 @@
 }
 
 .socials__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-transition: opacity .2s ease;
     -o-transition: opacity .2s ease;
     transition: opacity .2s ease;

@@ -1,6 +1,6 @@
 .consultation__wrapper {
     border-radius: 10px;
-    background-image: url("/assets/img/sections/consultation/background.jpg");
+    background-image: url("../../img/sections/consultation/background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

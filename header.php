@@ -4,15 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Наркологическая клиника «Ренессанс»</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/build/fancybox.css">
-    <link rel="stylesheet" href="/assets/css/build/swiper.css">
-    <link rel="stylesheet" href="/assets/css/normalize.css">
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="stylesheet" href="/assets/css/headers/header.css">
+    <title>Ренессанс</title>
+    <link href="/assets/css/build/fancybox.css" rel="stylesheet" type="text/css">
+    <link href="/assets/css/build/swiper.css" rel="stylesheet" type="text/css">
+    <link href="/assets/css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="/assets/css/main.css" rel="stylesheet" type="text/css">
+    <link href="/assets/css/headers/header.css" rel="stylesheet" type="text/css">
+    <link href="/assets/css/footers/footer.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="/assets/css/sections/promo.css">
     <link rel="stylesheet" href="/assets/css/sections/advantages.css">
     <link rel="stylesheet" href="/assets/css/sections/services.css">
@@ -30,7 +28,8 @@
     <link rel="stylesheet" href="/assets/css/sections/articles.css">
     <link rel="stylesheet" href="/assets/css/sections/article-navigation.css">
     <link rel="stylesheet" href="/assets/css/sections/article.css">
-    <link rel="stylesheet" href="/assets/css/footers/footer.css">
+    <link rel="stylesheet" href="/assets/css/sections/documents-page.css">
+    <link rel="stylesheet" href="/assets/css/sections/specialists-page.css">
     <script defer src="/assets/js/build/fancybox.js"></script>
     <script defer src="/assets/js/build/swiper.js"></script>
     <script defer src="/assets/js/main.js"></script>
