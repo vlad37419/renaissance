@@ -1,8 +1,7 @@
 /* fonts */
 @font-face {
     font-family: 'Nunito';
-    src: local('Nunito Regular'), local('Nunito-Regular'),
-    url('/assets/fonts/nunito/regular/Nunito-Regular.woff2') format('woff2'),
+    src: url('/assets/fonts/nunito/regular/Nunito-Regular.woff2') format('woff2'),
     url('/assets/fonts/nunito/regular/Nunito-Regular.woff') format('woff');
     font-display: swap;
     font-weight: 400;
@@ -11,8 +10,7 @@
 
 @font-face {
     font-family: 'Nunito';
-    src: local('Nunito ExtraBold'), local('Nunito-ExtraBold'),
-    url('/assets/fonts/nunito/extra-bold/Nunito-ExtraBold.woff2') format('woff2'),
+    src: url('/assets/fonts/nunito/extra-bold/Nunito-ExtraBold.woff2') format('woff2'),
     url('/assets/fonts/nunito/extra-bold/Nunito-ExtraBold.woff') format('woff');
     font-display: swap;
     font-weight: 800;
