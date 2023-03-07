@@ -1,3 +1,7 @@
+.faq-page__descr {
+    margin-bottom: 60px;
+}
+
 .faq__wrapper {
     margin-bottom: 70px;
 }
@@ -63,6 +67,19 @@
 }
 
 @media (max-width: 991px) {
+    .faq-page__container {
+        padding: 0;
+    }
+
+    .faq-page__title {
+        padding: 0 15px;
+    }
+
+    .faq-page__descr {
+        margin-bottom: 30px;
+        padding: 0 15px;
+    }
+
     .faq__wrapper {
         margin-bottom: 30px;
     }

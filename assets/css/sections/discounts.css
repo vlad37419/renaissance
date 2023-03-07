@@ -1,0 +1,17 @@
+.discounts-page {
+    margin-bottom: 120px;
+}
+
+.discounts-page__descr {
+    margin-bottom: 60px;
+}
+
+@media (max-width: 991px) {
+    .discounts-page {
+        margin-bottom: 60px;
+    }
+
+    .discounts-page__descr {
+        margin-bottom: 30px;
+    }
+}

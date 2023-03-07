@@ -30,6 +30,9 @@
     <link rel="stylesheet" href="/assets/css/sections/article.css">
     <link rel="stylesheet" href="/assets/css/sections/documents-page.css">
     <link rel="stylesheet" href="/assets/css/sections/specialists-page.css">
+    <link rel="stylesheet" href="/assets/css/sections/discounts.css">
+    <link rel="stylesheet" href="/assets/css/sections/gallery-page.css">
+    <link rel="stylesheet" href="/assets/css/sections/reviews-page.css">
     <script defer src="/assets/js/build/fancybox.js"></script>
     <script defer src="/assets/js/build/swiper.js"></script>
     <script defer src="/assets/js/main.js"></script>

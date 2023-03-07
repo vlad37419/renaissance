@@ -815,63 +815,63 @@
                 <span class="section-decor-item"></span>
             </div>
             <div class="promotions__cards row">
-                <div class="promotions__card col-33">
-                    <a href="#" class="promotions__card-wrapper">
+                <a href="#" class="promotions__card discount col-33">
+                    <div class="discount__wrapper">
                         <img src="/assets/img/sections/promotions/card-decor.svg" alt="" aria-label="presentation"
-                             class="promotions__card-decor">
+                             class="discount__decor">
                         <img src="/assets/img/sections/promotions/aid-kit.png" alt="" aria-label="presentation"
-                             class="promotions__card-presentation">
-                        <div class="promotions__card-content">
-                            <p class="promotions__card-sticker">
+                             class="discount__presentation">
+                        <div class="discount__content">
+                            <p class="discount__sticker">
                                 Акция
                             </p>
-                            <p class="promotions__card-name">
+                            <p class="discount__name">
                                 Выезд нарколога на дом
                             </p>
-                            <p class="promotions__card-discount">
+                            <p class="discount__sale">
                                 1600 ₽
                             </p>
                         </div>
-                    </a>
-                </div>
-                <div class="promotions__card col-33">
-                    <a href="#" class="promotions__card-wrapper">
+                    </div>
+                </a>
+                <a href="#" class="promotions__card discount col-33">
+                    <div class="discount__wrapper">
                         <img src="/assets/img/sections/promotions/card-decor.svg" alt="" aria-label="presentation"
-                             class="promotions__card-decor">
-                        <img src="/assets/img/sections/promotions/dropper.png" alt="" aria-label="presentation"
-                             class="promotions__card-presentation">
-                        <div class="promotions__card-content">
-                            <p class="promotions__card-sticker">
+                             class="discount__decor">
+                        <img src="/assets/img/sections/promotions/aid-kit.png" alt="" aria-label="presentation"
+                             class="discount__presentation">
+                        <div class="discount__content">
+                            <p class="discount__sticker">
                                 Акция
                             </p>
-                            <p class="promotions__card-name">
-                                Стандартная капельница
+                            <p class="discount__name">
+                                Выезд нарколога на дом
                             </p>
-                            <p class="promotions__card-discount">
-                                2000 ₽
+                            <p class="discount__sale">
+                                1600 ₽
                             </p>
                         </div>
-                    </a>
-                </div>
-                <div class="promotions__card col-33">
-                    <a href="#" class="promotions__card-wrapper">
+                    </div>
+                </a>
+                <a href="#" class="promotions__card discount col-33">
+                    <div class="discount__wrapper">
                         <img src="/assets/img/sections/promotions/card-decor.svg" alt="" aria-label="presentation"
-                             class="promotions__card-decor">
-                        <img src="/assets/img/sections/promotions/ak-47.png" alt="" aria-label="presentation"
-                             class="promotions__card-presentation">
-                        <div class="promotions__card-content">
-                            <p class="promotions__card-sticker">
-                                Скидка
+                             class="discount__decor">
+                        <img src="/assets/img/sections/promotions/aid-kit.png" alt="" aria-label="presentation"
+                             class="discount__presentation">
+                        <div class="discount__content">
+                            <p class="discount__sticker">
+                                Акция
                             </p>
-                            <p class="promotions__card-name">
-                                Для семей мобилизованных
+                            <p class="discount__name">
+                                Выезд нарколога на дом
                             </p>
-                            <p class="promotions__card-discount">
-                                10%
+                            <p class="discount__sale">
+                                1600 ₽
                             </p>
                         </div>
-                    </a>
-                </div>
+                    </div>
+                </a>
             </div>
             <a href="#" class="promotions__more-link btn more-link">
                 Смотреть все акции
@@ -1358,80 +1358,80 @@
             <div class="articles__wrapper">
                 <div class="articles__slider swiper">
                     <div class="articles__slider-wrapper swiper-wrapper">
-                        <a href="#" class="articles__slide swiper-slide">
-                            <picture class="articles__slide-picture">
+                        <a href="#" class="articles__slide article-card swiper-slide">
+                            <picture class="article-card__picture">
                                 <img src="/assets/img/sections/articles/test.png" alt="Фото Фенибута"
-                                     class="articles__slide-img">
+                                     class="article-card__img">
                             </picture>
-                            <p class="articles__slide-title">
+                            <p class="article-card__title">
                                 Совместим ли одновременный приём Фенибута и алкоголя?
                             </p>
-                            <p class="articles__slide-text">
+                            <p class="article-card__text">
                                 Описание о влиянии на организм, если совмещать приём лекарства Фенибут и алкоголя, какие
                                 возможны последствия.
                             </p>
                         </a>
-                        <a href="#" class="articles__slide swiper-slide">
-                            <picture class="articles__slide-picture">
+                        <a href="#" class="articles__slide article-card swiper-slide">
+                            <picture class="article-card__picture">
                                 <img src="/assets/img/sections/articles/test.png" alt="Фото Фенибута"
-                                     class="articles__slide-img">
+                                     class="article-card__img">
                             </picture>
-                            <p class="articles__slide-title">
+                            <p class="article-card__title">
                                 Совместим ли одновременный приём Фенибута и алкоголя?
                             </p>
-                            <p class="articles__slide-text">
+                            <p class="article-card__text">
                                 Описание о влиянии на организм, если совмещать приём лекарства Фенибут и алкоголя, какие
                                 возможны последствия.
                             </p>
                         </a>
-                        <a href="#" class="articles__slide swiper-slide">
-                            <picture class="articles__slide-picture">
+                        <a href="#" class="articles__slide article-card swiper-slide">
+                            <picture class="article-card__picture">
                                 <img src="/assets/img/sections/articles/test.png" alt="Фото Фенибута"
-                                     class="articles__slide-img">
+                                     class="article-card__img">
                             </picture>
-                            <p class="articles__slide-title">
+                            <p class="article-card__title">
                                 Совместим ли одновременный приём Фенибута и алкоголя?
                             </p>
-                            <p class="articles__slide-text">
+                            <p class="article-card__text">
                                 Описание о влиянии на организм, если совмещать приём лекарства Фенибут и алкоголя, какие
                                 возможны последствия.
                             </p>
                         </a>
-                        <a href="#" class="articles__slide swiper-slide">
-                            <picture class="articles__slide-picture">
+                        <a href="#" class="articles__slide article-card swiper-slide">
+                            <picture class="article-card__picture">
                                 <img src="/assets/img/sections/articles/test.png" alt="Фото Фенибута"
-                                     class="articles__slide-img">
+                                     class="article-card__img">
                             </picture>
-                            <p class="articles__slide-title">
+                            <p class="article-card__title">
                                 Совместим ли одновременный приём Фенибута и алкоголя?
                             </p>
-                            <p class="articles__slide-text">
+                            <p class="article-card__text">
                                 Описание о влиянии на организм, если совмещать приём лекарства Фенибут и алкоголя, какие
                                 возможны последствия.
                             </p>
                         </a>
-                        <a href="#" class="articles__slide swiper-slide">
-                            <picture class="articles__slide-picture">
+                        <a href="#" class="articles__slide article-card swiper-slide">
+                            <picture class="article-card__picture">
                                 <img src="/assets/img/sections/articles/test.png" alt="Фото Фенибута"
-                                     class="articles__slide-img">
+                                     class="article-card__img">
                             </picture>
-                            <p class="articles__slide-title">
+                            <p class="article-card__title">
                                 Совместим ли одновременный приём Фенибута и алкоголя?
                             </p>
-                            <p class="articles__slide-text">
+                            <p class="article-card__text">
                                 Описание о влиянии на организм, если совмещать приём лекарства Фенибут и алкоголя, какие
                                 возможны последствия.
                             </p>
                         </a>
-                        <a href="#" class="articles__slide swiper-slide">
-                            <picture class="articles__slide-picture">
+                        <a href="#" class="articles__slide article-card swiper-slide">
+                            <picture class="article-card__picture">
                                 <img src="/assets/img/sections/articles/test.png" alt="Фото Фенибута"
-                                     class="articles__slide-img">
+                                     class="article-card__img">
                             </picture>
-                            <p class="articles__slide-title">
+                            <p class="article-card__title">
                                 Совместим ли одновременный приём Фенибута и алкоголя?
                             </p>
-                            <p class="articles__slide-text">
+                            <p class="article-card__text">
                                 Описание о влиянии на организм, если совмещать приём лекарства Фенибут и алкоголя, какие
                                 возможны последствия.
                             </p>
