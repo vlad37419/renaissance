@@ -67,7 +67,7 @@
 
 .article__high-text {
     padding-left: 114px;
-    background-image: url("/assets/img/sections/article/high-text.svg");
+    background-image: url("../../img/sections/article/high-text.svg");
     background-repeat: no-repeat;
     background-position: 40px top;
     position: relative;
