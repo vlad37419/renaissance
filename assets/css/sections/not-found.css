@@ -1,0 +1,39 @@
+.not-found__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.not-found__picture {
+    margin-bottom: 60px;
+}
+
+.not-found__title {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.not-found__descr {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.not-found__group {
+    display: flex;
+}
+
+.not-found__search {
+    margin-right: 40px;
+}
+
+.not-found__search .search-top__input {
+    border-radius: 10px;
+    height: 60px;
+}
+
+.not-found__btn {
+    padding: 14.5px 20px;
+    font-size: 18px;
+    line-height: 160%;
+    min-width: 300px;
+}

@@ -145,9 +145,6 @@
 
 .footer__requisites {
     margin-bottom: 70px;
-}
-
-.footer__requisites-item {
     font-size: 16px;
     line-height: 160%;
     color: rgba(255, 255, 255, .4);

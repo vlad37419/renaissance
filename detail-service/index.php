@@ -382,8 +382,66 @@
                     этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей
                     деятельности представляет собой интересный эксперимент проверки позиций, занимаемых участниками в
                     отношении поставленных задач. Разнообразный и богатый опыт реализация намеченных плановых заданий
-                    влечет за собой процесс внедрения и модернизации новых предложений. <a href="tel:80000000000">+7 (000) 000-00-00</a>
+                    влечет за собой процесс внедрения и модернизации новых предложений. <a href="tel:80000000000">+7
+                        (000) 000-00-00</a>
                 </p>
+            </div>
+        </div>
+    </section>
+    <section class="steps section-offset">
+        <div class="steps__container container">
+            <h2 class="steps__title section-title section-title_color">
+                Этапы оказания помощи
+            </h2>
+            <div class="steps__row row">
+                <div class="steps__column step col-33">
+                    <p class="step__num">
+                        1
+                    </p>
+                    <p class="step__text">
+                        Поступление вашей заявки
+                    </p>
+                </div>
+                <div class="steps__column step col-33">
+                    <p class="step__num">
+                        2
+                    </p>
+                    <p class="step__text">
+                        Поступление вашей заявки
+                    </p>
+                </div>
+                <div class="steps__column step col-33">
+                    <p class="step__num">
+                        3
+                    </p>
+                    <p class="step__text">
+                        Поступление вашей заявки
+                    </p>
+                </div>
+                <div class="steps__column step col-33">
+                    <p class="step__num">
+                        4
+                    </p>
+                    <p class="step__text">
+                        Поступление вашей заявки
+                    </p>
+                </div>
+                <div class="steps__column step col-33">
+                    <p class="step__num">
+                        5
+                    </p>
+                    <p class="step__text">
+                        Поступление вашей заявки
+                    </p>
+                </div>
+                <div class="steps__column step col-33">
+                    <p class="step__num">
+                        6
+                    </p>
+                    <p class="step__text">
+                        Поступление вашей заявки
+                    </p>
+                </div>
             </div>
         </div>
     </section>

@@ -2,6 +2,15 @@
     margin-bottom: 120px;
 }
 
+.services_detail .services__title {
+    margin-bottom: 70px;
+}
+
+.services_detail .services__descr,
+.services_detail .section-decor {
+    display: none;
+}
+
 .services__cards {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -29,6 +38,9 @@
     height: 230px;
     overflow: hidden;
     border-radius: 10px 10px 0 0;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
 }
 
 .card-service__img {
@@ -56,9 +68,6 @@
     -webkit-transition: background-color .2s ease;
     -o-transition: background-color .2s ease;
     transition: background-color .2s ease;
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
 }
 
 .card-service__text {
@@ -137,6 +146,10 @@
 
     .card-service__content {
         padding: 15px;
+    }
+
+    .services_detail .services__title {
+        margin-bottom: 50px;
     }
 }
 

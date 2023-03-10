@@ -33,6 +33,9 @@
     <link rel="stylesheet" href="/assets/css/sections/discounts.css">
     <link rel="stylesheet" href="/assets/css/sections/gallery-page.css">
     <link rel="stylesheet" href="/assets/css/sections/reviews-page.css">
+    <link rel="stylesheet" href="/assets/css/sections/steps.css">
+    <link rel="stylesheet" href="/assets/css/sections/not-found.css">
+    <link rel="stylesheet" href="/assets/css/sections/contacts.css">
     <script defer src="/assets/js/build/fancybox.js"></script>
     <script defer src="/assets/js/build/swiper.js"></script>
     <script defer src="/assets/js/main.js"></script>
